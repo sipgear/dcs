@@ -83,7 +83,7 @@ webot.set('subscribe', {
     return info.is('event') && info.param.event === 'subscribe';
   },
   handler: function(info) {
-    return '欢迎使用君乐定位系统，发送:帐号#用户#密码，进行绑定。试用请选择 【定位服务】-> 【试用产品】';
+    return '欢迎使用君乐定位系统，发送你定位器账号信息进行绑定，格式为: 帐号#用户#密码。试用请选择 【定位服务】-> 【试用产品】';
   }
 });
 webot.set('ly', 'adduser,account,user,passwd,sim \n adddevice,account,deviceID,uniqueID,simNum \n pwd,account,user,passwd,sim ');
@@ -92,7 +92,6 @@ webot.set('CLICK', {
     return info.is('event') && info.param.event === 'CLICK';
   },
   handler: function(info, next) {
-   // return '菜单发送信息为：「' + info.param.eventKey + '」'; 
       if (info.param.eventKey == '绑定设备') {
         var reply = {
                title: '设备绑定',
@@ -223,7 +222,7 @@ webot.set('CLICK', {
                       var acc = res['accountID'];
                       var grouplist = res['groupID']; 
                       // start query eventdata mysql
-                      mysql.query('SELECT accountID,deviceID,equipmentType,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE deviceID in (SELECT deviceID FROM DeviceList WHERE accountID = "'+acc+'" AND groupID = "'+grouplist+'")', function(err,rows,fields) {
+                      mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,displayName,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE deviceID in (SELECT deviceID FROM DeviceList WHERE accountID = "'+acc+'" AND groupID = "'+grouplist+'")', function(err,rows,fields) {
                       var re2 = []                   
                       for(var i=0;i<rows.length;i++){
                       var accountID = rows[i].accountID;
@@ -242,13 +241,14 @@ webot.set('CLICK', {
                       }
                      if (rows[i].equipmentType == "vehicle"){
                         re2.push({
-                      title: "设备:"+deviceID+ '\n' +
+                      title: "设备名称:"+displayName+ '\n' +
+                             "ID:"+deviceID+ '\n' +
+                             "服务时限:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
-                             "定位:"+fix+ '\n' +                              
-                             "日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
-                             "时间:"+unixtime2hhmmss(timestamp)+ '\n' +
-                             "位置:"+address, 
-
+                             "定位方式:"+fix+ '\n' +                          
+                             "定位日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
+                             "定位时间:"+unixtime2hhmmss(timestamp)+ '\n' +
+                             "设备位置:"+address, 
                       pic: 'http://liyume.qiniudn.com/2012617545066475468.jpg',
                       url: 'http://apis.map.qq.com/uri/v1/marker?marker=coord:'+latitude+','+longitude+';title:'+deviceID+'',
                       });
@@ -256,12 +256,14 @@ webot.set('CLICK', {
                       }
                       else { 
                       re2.push({
-                      title: "设备:"+deviceID+ '\n' +
+                      title: "设备名称:"+displayName+ '\n' +
+                             "ID:"+deviceID+ '\n' +
+                             "服务时限:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
-                             "定位:"+fix+ '\n' +                              
-                             "日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
-                             "时间:"+unixtime2hhmmss(timestamp)+ '\n' +
-                             "位置:"+address, 
+                             "定位方式:"+fix+ '\n' +                          
+                             "定位日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
+                             "定位时间:"+unixtime2hhmmss(timestamp)+ '\n' +
+                             "设备位置:"+address, 
                       pic: 'http://liyume.qiniudn.com/standbygps.png',
                       url: 'http://apis.map.qq.com/uri/v1/marker?marker=coord:'+latitude+','+longitude+';title:'+deviceID+'',                                                 
                       });                         
@@ -282,11 +284,13 @@ webot.set('CLICK', {
                     }//end of query groupid
                    //start all group
                     else {
-                    mysql.query('SELECT accountID,deviceID,equipmentType,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID in (SELECT accountID FROM User WHERE notes = "'+info.uid+'")', function(err,rows,fields) {
+                    mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,displayName,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID in (SELECT accountID FROM User WHERE notes = "'+info.uid+'")', function(err,rows,fields) {
                      var re2 = []                   
                     for(var i=0;i<rows.length;i++){
                       var accountID = rows[i].accountID;
                       var deviceID = rows[i].deviceID;
+                      var expirationTime = rows[i].expirationTime;
+                      var displayName = rows[i].displayName;
                       var lastBatteryLevel = rows[i].lastBatteryLevel;
                        var address = rows[i].notes;
                       var longitude =  rows[i].lastValidLongitude;
@@ -302,12 +306,14 @@ webot.set('CLICK', {
                       
                      if (rows[i].equipmentType == "vehicle"){
                         re2.push({
-                      title: "设备:"+deviceID+ '\n' +
+                      title: "设备名称:"+displayName+ '\n' +
+                             "ID:"+deviceID+ '\n' +
+                             "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
-                             "定位:"+fix+ '\n' +                              
+                             "定位方式:"+fix+ '\n' +                          
                              "日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
                              "时间:"+unixtime2hhmmss(timestamp)+ '\n' +
-                             "位置:"+address, 
+                             "设备位置:"+address,  
                       pic: 'http://liyume.qiniudn.com/2012617545066475468.jpg',
                       url: 'http://apis.map.qq.com/uri/v1/marker?marker=coord:'+latitude+','+longitude+';title:'+deviceID+'',
                       });
@@ -315,12 +321,14 @@ webot.set('CLICK', {
                       }
                       else { 
                       re2.push({
-                      title: "设备:"+deviceID+ '\n' +
+                      title: "设备名称:"+displayName+ '\n' +
+                             "ID:"+deviceID+ '\n' +
+                             "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
-                             "定位:"+fix+ '\n' +                              
+                             "定位方式:"+fix+ '\n' +                          
                              "日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
                              "时间:"+unixtime2hhmmss(timestamp)+ '\n' +
-                             "位置:"+address, 
+                             "设备位置:"+address,
                       pic: 'http://liyume.qiniudn.com/standbygps.png',
                       url: 'http://apis.map.qq.com/uri/v1/marker?marker=coord:'+latitude+','+longitude+';title:'+deviceID+'',                                                 
                       });                         
@@ -358,11 +366,13 @@ webot.set('CLICK', {
       }
       else if (info.param.eventKey == "sysadmin#demo#demo"){
 
-                      mysql.query('SELECT accountID,deviceID,equipmentType,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID = "sysadmin"', function(err,rows,fields) {
+                      mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,displayName,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID = "sysadmin"', function(err,rows,fields) {
                       var re2 = []                   
                       for(var i=0;i<rows.length;i++){
                       var accountID = rows[i].accountID;
                       var deviceID = rows[i].deviceID;
+                      var expirationTime = rows[i].expirationTime;
+                      var displayName = rows[i].displayName;
                       var lastBatteryLevel = rows[i].lastBatteryLevel;
                       var address = rows[i].notes;
                       var longitude =  rows[i].lastValidLongitude;
@@ -377,12 +387,14 @@ webot.set('CLICK', {
                       }
                      if (rows[i].equipmentType == "vehicle"){
                         re2.push({
-                      title: "设备:"+deviceID+ '\n' +
+                      title: "设备名称:"+displayName+ '\n' +
+                             "ID:"+deviceID+ '\n' +
+                             "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
-                             "定位:"+fix+ '\n' +                              
+                             "定位方式:"+fix+ '\n' +                          
                              "日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
                              "时间:"+unixtime2hhmmss(timestamp)+ '\n' +
-                             "位置:"+address, 
+                             "设备位置:"+address,
                              
                       pic: 'http://liyume.qiniudn.com/2012617545066475468.jpg',
                       url: 'http://apis.map.qq.com/uri/v1/marker?marker=coord:'+latitude+','+longitude+';title:'+deviceID+'',
@@ -391,12 +403,14 @@ webot.set('CLICK', {
                       }
                       else { 
                       re2.push({
-                      title: "设备:"+deviceID+ '\n' +
+                      title: "设备名称:"+displayName+ '\n' +
+                             "ID:"+deviceID+ '\n' +
+                             "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
-                             "定位:"+fix+ '\n' +                              
+                             "定位方式:"+fix+ '\n' +                          
                              "日期:"+unixtime2YYMMDD(timestamp)+ '\n' +
                              "时间:"+unixtime2hhmmss(timestamp)+ '\n' +
-                             "位置:"+address, 
+                             "设备位置:"+address,
                       pic: 'http://liyume.qiniudn.com/standbygps.png',
                       url: 'http://apis.map.qq.com/uri/v1/marker?marker=coord:'+latitude+','+longitude+';title:'+deviceID+'',                                                 
                       });                         
@@ -415,6 +429,7 @@ webot.set('CLICK', {
                     )// end query eventdata mysql
       
          }
+
 
   } //end of 
 });
@@ -467,6 +482,8 @@ webot.set('#+', {
 
     }
 })
+
+
 
 webot.set(',+', {
   pattern: /,+/i,

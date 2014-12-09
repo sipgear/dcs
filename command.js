@@ -31,12 +31,13 @@ function datetime_to_unix(datetime){
     return parseInt(now.getTime()/1000);
 }
 
-var csql = "SELECT * FROM (SELECT accountID, deviceID,equipmentType,uniqueID,deviceCode,serialNumber,notifyEmail,lastNotifyTime,lastNotifyCode FROM Device ORDER BY uniqueID DESC) sub GROUP BY uniqueID";
+var csql = "SELECT * FROM (SELECT accountID, deviceID,equipmentType,expirationTime,uniqueID,deviceCode,serialNumber,notifyEmail,lastNotifyTime,lastNotifyCode FROM Device ORDER BY uniqueID DESC) sub GROUP BY uniqueID";
 mysql.query(csql, function(err, rows, fields) {
     for (key in rows) {
         cache[rows[key].uniqueID] = {};
         cache[rows[key].uniqueID].accountID = rows[key].accountID;
         cache[rows[key].uniqueID].deviceID = rows[key].deviceID;
+        cache[rows[key].uniqueID].expirationTime = rows[key].expirationTime;
         cache[rows[key].uniqueID].equipmentType = rows[key].equipmentType;
         cache[rows[key].uniqueID].deviceCode = rows[key].deviceCode;
         cache[rows[key].uniqueID].serialNumber = rows[key].serialNumber;
@@ -67,12 +68,13 @@ function getCityFromCoordinates(lat, long, cb){
 // Build the cache
 setInterval(function() {
     console.log("query db account every 1 min");
-    var csql = "SELECT * FROM (SELECT accountID, deviceID,equipmentType,uniqueID,deviceCode,serialNumber,notifyEmail,lastNotifyTime,lastNotifyCode FROM Device ORDER BY uniqueID DESC) sub GROUP BY uniqueID";
+    var csql = "SELECT * FROM (SELECT accountID, deviceID,equipmentType,expirationTime,uniqueID,deviceCode,serialNumber,notifyEmail,lastNotifyTime,lastNotifyCode FROM Device ORDER BY uniqueID DESC) sub GROUP BY uniqueID";
     mysql.query(csql, function(err, rows, fields) {
         for (key in rows) {
             cache[rows[key].uniqueID] = {};
             cache[rows[key].uniqueID].accountID = rows[key].accountID;
             cache[rows[key].uniqueID].deviceID = rows[key].deviceID;
+            cache[rows[key].uniqueID].expirationTime = rows[key].expirationTime;
             cache[rows[key].uniqueID].equipmentType = rows[key].equipmentType;
             cache[rows[key].uniqueID].deviceCode = rows[key].deviceCode;
             cache[rows[key].uniqueID].serialNumber = rows[key].serialNumber;
@@ -352,7 +354,7 @@ var server = net.createServer(function(c) {
                     
                          mysql.query('UPDATE Device SET ? WHERE uniqueID = "'+trackerid+'"',{deviceCode: "JUNLE Series",ipAddressCurrent: c.remoteAddress, remotePortCurrent: c.remotePort});
                     // vehicle inster db
-                   
+                   //  cache[datum.uniqueID].expirationTime;
                     if(cache[datum.uniqueID].equipmentType  == "vehicle"  ) {    
                             if (tks(5,1) == 1 && valid == "A" ){
                                 var statusCode = "61713";
@@ -684,7 +686,15 @@ var server = net.createServer(function(c) {
              var p2_batt_pe = p2_batt_p1.slice(0,4);
              var account = cache[datum.uniqueID].accountID;
              var device = cache[datum.uniqueID ].deviceID;
-             mysql.query('UPDATE Device SET ? WHERE uniqueID = "'+parse2_uniqueid+'"',{lastBatteryLevel: p2_batt_pe});         
+             var dt = Date.parse(new Date())/1000;
+             var expTime = dt + 31449599;
+             //typeof cache[datum.uniqueID].expirationTime == 'undefined'
+             console.log("expTime" + cache[datum.uniqueID].expirationTime)
+             if(cache[datum.uniqueID].expirationTime == '0'){
+              mysql.query('UPDATE Device SET ? WHERE uniqueID = "'+parse2_uniqueid+'"',{expirationTime: expTime}); 
+              console.log("exptime insert db")  
+             } 
+                     
                  var onResponse = function(err, coords) {
                       if (err == null) {
                          if (typeof coords.cell != 'undefined') {
@@ -697,7 +707,7 @@ var server = net.createServer(function(c) {
                          sql1 = 'INSERT INTO EventData (accountID,deviceID,statusCode,longitude,latitude,timestamp) VALUES ' + val_strings.join(',');
                          console.log(sql1)
                          mysql.query(sql1);
-                         sql='UPDATE Device set lastValidLatitude="'+coords.lat+'",lastValidLongitude="'+coords.lon+'",lastCellServingInfo="'+parse2_lac+'",lastEventTimestamp=UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"),notes="" WHERE accountID="'+account+'" and deviceID="'+device+'"'
+                         sql='UPDATE Device set lastBatteryLevel="'+p2_batt_pe+'",lastValidLatitude="'+coords.lat+'",lastValidLongitude="'+coords.lon+'",lastCellServingInfo="'+parse2_lac+'",lastEventTimestamp=UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"),notes="" WHERE accountID="'+account+'" and deviceID="'+device+'"'
                          mysql.query(sql);                                     
                         }
                        }
