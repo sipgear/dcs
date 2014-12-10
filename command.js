@@ -353,6 +353,14 @@ var server = net.createServer(function(c) {
 
                     
                          mysql.query('UPDATE Device SET ? WHERE uniqueID = "'+trackerid+'"',{deviceCode: "JUNLE Series",ipAddressCurrent: c.remoteAddress, remotePortCurrent: c.remotePort});
+             var dt = Date.parse(new Date())/1000;
+             var expTime = dt + 31449599;
+             //typeof cache[datum.uniqueID].expirationTime == 'undefined'
+             console.log("expTime" + cache[datum.uniqueID].expirationTime)
+             if(cache[datum.uniqueID].expirationTime == '0'){
+              mysql.query('UPDATE Device SET ? WHERE uniqueID = "'+trackerid+'"',{expirationTime: expTime}); 
+              console.log("exptime insert db")  
+             } 
                     // vehicle inster db
                    //  cache[datum.uniqueID].expirationTime;
                     if(cache[datum.uniqueID].equipmentType  == "vehicle"  ) {    
@@ -686,14 +694,6 @@ var server = net.createServer(function(c) {
              var p2_batt_pe = p2_batt_p1.slice(0,4);
              var account = cache[datum.uniqueID].accountID;
              var device = cache[datum.uniqueID ].deviceID;
-             var dt = Date.parse(new Date())/1000;
-             var expTime = dt + 31449599;
-             //typeof cache[datum.uniqueID].expirationTime == 'undefined'
-             console.log("expTime" + cache[datum.uniqueID].expirationTime)
-             if(cache[datum.uniqueID].expirationTime == '0'){
-              mysql.query('UPDATE Device SET ? WHERE uniqueID = "'+parse2_uniqueid+'"',{expirationTime: expTime}); 
-              console.log("exptime insert db")  
-             } 
                      
                  var onResponse = function(err, coords) {
                       if (err == null) {
