@@ -164,9 +164,9 @@ webot.set('CLICK', {
                             '问: 为什么查询定位器位置每天只有3次定位数据？'+ '\n' +
                             '答: 定位器默认每天登陆3次服务器，并上传GSM基站位置，以保证内置的电池可以连续工作2年。'+ '\n' +
                             '问: 需要紧急定位设备的位置，该如何操作? '+ '\n' +
-                            '答: 请通过微信发送报警指令，格式为：设备名称@报警 比如：t63065@报警 设备会每30分钟报告一次精确位置信息'+ '\n' +
+                            '答: 请通过微信发送报警指令，格式为：设备名称@报警 比如：1141023233@报警 设备会每30分钟报告一次精确位置信息'+ '\n' +
                             '问: 如何撤销报警? '+ '\n' +
-                            '答: 请通过微信发送撤防指令，格式为：设备名称@撤防 比如：t63065@撤防 设备会每30分钟报告一次精确位置信息'+ '\n' +
+                            '答: 请通过微信发送撤防指令，格式为：设备名称@撤防 比如：1141023233@撤防 设备会每30分钟报告一次精确位置信息'+ '\n' +
                             '问: 电池电量低时，如何处理？'+ '\n' +
                             '答: 每次查询位置均有显示设备的电量信息，请在设备电量低于20前，联系我们更换电池。费用为30元。'
 
@@ -178,10 +178,10 @@ webot.set('CLICK', {
                title: '报警撤防',
                pic: 'http://liyume.qiniudn.com/alarm.jpg',
                url: 'http://geargts.com',
-               description: '报警指令：设备名称@报警 比如：t63065@报警'+ '\n' +
-                            '紧急指令：设备名称@报警 比如：t63065@紧急'+ '\n' +
-                            '撤防指令：设备名称@撤防 比如：t63065@撤防'+ '\n' +
-                            '睡眠指令：设备名称@睡眠 比如：t63065@睡眠'
+               description: '报警指令：设备名称@报警 比如：1141023233@报警'+ '\n' +
+                            '紧急指令：设备名称@报警 比如：1141023233@紧急'+ '\n' +
+                            '撤防指令：设备名称@撤防 比如：1141023233@撤防'+ '\n' +
+                            '睡眠指令：设备名称@睡眠 比如：1141023233@睡眠'
               }        
         return next(null,reply) 
       }
@@ -192,16 +192,18 @@ webot.set('CLICK', {
                pic: 'http://liyume.qiniudn.com/command.jpg',
                url: 'http://geargts.com',
                description: '绑定指令：【帐号#用户#密码】'+ '\n' +
-                            '紧急指令：【设备名称@紧急】 '+ '\n' +'急指令执行时，定位器一直开启并每30秒返回一次定位数据，直到电源30%时自动进入报警指令状态'+ '\n' +
-                            '报警指令：【设备名称@报警】 '+ '\n' +'报警指令执行时定位器每1小时返回一次定位数据，直到电源20%时自动进入撤防指令'+ '\n' +
-                            '撤防指令：【设备名称@撤防】'+ '\n' +'撤防指令执行时，定位器早上、中午、晚上、凌晨各返回一次定位数据'+ '\n' +
-                            '睡眠指令：【设备名称@睡眠】'+ '\n' +'撤防指令执行时，定位器每天12点返回一次定位数据'+ '\n' +
+                            '紧急指令：【设备号@紧急】 '+ '\n' +'急指令执行时，定位器一直开启并每30秒返回一次定位数据，直到电源30%时自动进入报警指令状态'+ '\n' +
+                            '报警指令：【设备号@报警】 '+ '\n' +'报警指令执行时定位器每1小时返回一次定位数据，直到电源20%时自动进入撤防指令'+ '\n' +
+                            '撤防指令：【设备号@撤防】'+ '\n' +'撤防指令执行时，定位器早上、中午、晚上、凌晨各返回一次定位数据'+ '\n' +
+                            '睡眠指令：【设设备号@睡眠】'+ '\n' +'撤防指令执行时，定位器每天12点返回一次定位数据'+ '\n' +
+                            '改名指令：【设设备号@改名@新的设备名称】'+ '\n' +'系统返改名成功'+ '\n' +
                             '如：'+ '\n' +
-                            '13326960628#admin#passwd' + '\n' +
-                            't63065@报警' + '\n' +
-                            't63065@紧急' + '\n' +
-                            't63065@撤防' + '\n' +
-                            't63065@睡眠'
+                            '76030110#admin#passwd' + '\n' +
+                            '1141023233@报警' + '\n' +
+                            '1141023233@紧急' + '\n' +
+                            '1141023233@撤防' + '\n' +
+                            '1141023233@睡眠' + '\n' +
+                            '1141023233@改名@大众汽车'
 
               }
         return next(null,reply) 
@@ -222,11 +224,12 @@ webot.set('CLICK', {
                       var acc = res['accountID'];
                       var grouplist = res['groupID']; 
                       // start query eventdata mysql
-                      mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,displayName,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE deviceID in (SELECT deviceID FROM DeviceList WHERE accountID = "'+acc+'" AND groupID = "'+grouplist+'")', function(err,rows,fields) {
+                      mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,description,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE deviceID in (SELECT deviceID FROM DeviceList WHERE accountID = "'+acc+'" AND groupID = "'+grouplist+'")', function(err,rows,fields) {
                       var re2 = []                   
                       for(var i=0;i<rows.length;i++){
                       var accountID = rows[i].accountID;
                       var deviceID = rows[i].deviceID;
+                      var description = rows[i].description;
                       var lastBatteryLevel = rows[i].lastBatteryLevel;
                       var address = rows[i].notes;
                       var longitude =  rows[i].lastValidLongitude;
@@ -241,8 +244,8 @@ webot.set('CLICK', {
                       }
                      if (rows[i].equipmentType == "vehicle"){
                         re2.push({
-                      title: "设备名称:"+displayName+ '\n' +
-                             "ID:"+deviceID+ '\n' +
+                      title: "设备名称:"+description+ '\n' +
+                             "设备号："+deviceID+ '\n' +
                              "服务时限:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
                              "定位方式:"+fix+ '\n' +                          
@@ -256,8 +259,8 @@ webot.set('CLICK', {
                       }
                       else { 
                       re2.push({
-                      title: "设备名称:"+displayName+ '\n' +
-                             "ID:"+deviceID+ '\n' +
+                      title: "设备名称:"+description+ '\n' +
+                             "设备号："+deviceID+ '\n' +
                              "服务时限:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
                              "定位方式:"+fix+ '\n' +                          
@@ -284,13 +287,13 @@ webot.set('CLICK', {
                     }//end of query groupid
                    //start all group
                     else {
-                    mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,displayName,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID in (SELECT accountID FROM User WHERE notes = "'+info.uid+'")', function(err,rows,fields) {
+                    mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,description,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID in (SELECT accountID FROM User WHERE notes = "'+info.uid+'")', function(err,rows,fields) {
                      var re2 = []                   
                     for(var i=0;i<rows.length;i++){
                       var accountID = rows[i].accountID;
                       var deviceID = rows[i].deviceID;
                       var expirationTime = rows[i].expirationTime;
-                      var displayName = rows[i].displayName;
+                      var description = rows[i].description;
                       var lastBatteryLevel = rows[i].lastBatteryLevel;
                        var address = rows[i].notes;
                       var longitude =  rows[i].lastValidLongitude;
@@ -306,8 +309,8 @@ webot.set('CLICK', {
                       
                      if (rows[i].equipmentType == "vehicle"){
                         re2.push({
-                      title: "设备名称:"+displayName+ '\n' +
-                             "ID:"+deviceID+ '\n' +
+                      title: "设备名称:"+description+ '\n' +
+                             "设备号："+deviceID+ '\n' +
                              "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
                              "定位方式:"+fix+ '\n' +                          
@@ -321,8 +324,8 @@ webot.set('CLICK', {
                       }
                       else { 
                       re2.push({
-                      title: "设备名称:"+displayName+ '\n' +
-                             "ID:"+deviceID+ '\n' +
+                      title: "设备名称:"+description+ '\n' +
+                             "设备号："+deviceID+ '\n' +
                              "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
                              "定位方式:"+fix+ '\n' +                          
@@ -366,13 +369,13 @@ webot.set('CLICK', {
       }
       else if (info.param.eventKey == "sysadmin#demo#demo"){
 
-                      mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,displayName,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID = "sysadmin"', function(err,rows,fields) {
+                      mysql.query('SELECT accountID,deviceID,equipmentType,expirationTime,description,lastBatteryLevel,lastValidLatitude,lastValidLongitude,lastEventTimestamp,lastCellServingInfo,notes FROM Device WHERE accountID = "sysadmin"', function(err,rows,fields) {
                       var re2 = []                   
                       for(var i=0;i<rows.length;i++){
                       var accountID = rows[i].accountID;
                       var deviceID = rows[i].deviceID;
                       var expirationTime = rows[i].expirationTime;
-                      var displayName = rows[i].displayName;
+                      var description = rows[i].description;
                       var lastBatteryLevel = rows[i].lastBatteryLevel;
                       var address = rows[i].notes;
                       var longitude =  rows[i].lastValidLongitude;
@@ -387,8 +390,8 @@ webot.set('CLICK', {
                       }
                      if (rows[i].equipmentType == "vehicle"){
                         re2.push({
-                      title: "设备名称:"+displayName+ '\n' +
-                             "ID:"+deviceID+ '\n' +
+                      title: "设备名称:"+description+ '\n' +
+                             "设备号："+deviceID+ '\n' +
                              "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
                              "定位方式:"+fix+ '\n' +                          
@@ -403,8 +406,8 @@ webot.set('CLICK', {
                       }
                       else { 
                       re2.push({
-                      title: "设备名称:"+displayName+ '\n' +
-                             "ID:"+deviceID+ '\n' +
+                      title: "设备名称:"+description+ '\n' +
+                             "设备号："+deviceID+ '\n' +
                              "有效期:"+unixtime2YYMMDD(expirationTime)+ '\n' +   
                              "电量:"+lastBatteryLevel+ '\n' +
                              "定位方式:"+fix+ '\n' +                          
@@ -526,10 +529,10 @@ webot.set(',+', {
                        next(null, "用户已存在")
                     }
                     else{
-                      var addaccount  = {accountID: s1, password: s3, timeZone: 'GMT+08:00', isActive: 1,description: s1, creationTime: dt};
+                      var addaccount  = {account设备号： s1, password: s3, timeZone: 'GMT+08:00', isActive: 1,description: s1, creationTime: dt};
                       var query = mysql.query('INSERT INTO Account SET ?', addaccount, function(err, result) {
                           })
-                      var adduser  = {accountID: s1, userID: s2, password: s3, contactPhone: s2, timeZone: 'GMT+08:00', maxAccessLevel: access, isActive: 1, creationTime: dt};
+                      var adduser  = {account设备号： s1, user设备号： s2, password: s3, contactPhone: s2, timeZone: 'GMT+08:00', maxAccessLevel: access, isActive: 1, creationTime: dt};
                       var query = mysql.query('INSERT INTO User SET ?', adduser, function(err, result) {
                           next(null, "新增用户完成")  
                           })
@@ -543,7 +546,7 @@ webot.set(',+', {
                        next(null, "设备ID已存在")
                     }
                     else{
-                      var adddevice  = {accountID: s1, deviceID: s2, uniqueID: s3, simPhoneNumber: s4, isActive: 1, creationTime: dt, description: s2};
+                      var adddevice  = {account设备号： s1, device设备号： s2, unique设备号： s3, simPhoneNumber: s4, isActive: 1, creationTime: dt, description: s2};
                       var query = mysql.query('INSERT INTO Device SET ?', adddevice, function(err, result) {
                           next(null, "新增设备完成")  
                           })
@@ -566,6 +569,7 @@ webot.set(',+', {
 
 })
 // set standby
+//
 webot.set('@+', {
   pattern: /@+/i,      
   handler: function(info, next) {
@@ -573,6 +577,7 @@ webot.set('@+', {
     var split = string.split('@');
     var s0 = split[0];
     var s1 = split[1];
+    var s2 = split[2];
                    mysql.query('SELECT accountID,userID,notes FROM User WHERE notes = "'+info.uid+'"', function(err, fields) {
                     var res = fields[0];
                     if (fields.length > 0){
@@ -587,23 +592,27 @@ webot.set('@+', {
                     var dt = Date.parse(new Date())/1000; 
                     if (s1 == "报警"){
                        cmd = "*HQ,000,S41,130305,6,4,2,2,2,2,2,2,2#"
-                       sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,2,2,2,2,2,2,2#', creationTime: dt};
+                       sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,2,2,2,2,2,2,2#', creationTime: dt};
                        res_string = "报警指令已提交,定位器下次签到时，会每小时回传一次GPS位置，追踪完毕后，请及时提交撤防指令，否则电池很快耗尽"
                        }
                     else if ( s1 == "撤防"){
                         cmd = "*HQ,000,S41,130305,6,4,1,1,1,1,1,1,1#"
-                        sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,1,1,1,1,1,1,1#', creationTime: dt};
+                        sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,1,1,1,1,1,1,1#', creationTime: dt};
                         res_string =  "撤防指令已提交，定位器每天签到服务器4次"
                        }
                     else if ( s1 == "睡眠"){
                        cmd = "HQ,000,S41,130305,6,1,1,1,1,1,1,1,1,0400040004000400040004000400#"
-                       sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,1,1,1,1,1,1,1,1,0400040004000400040004000400#', creationTime: dt};
+                       sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,1,1,1,1,1,1,1,1,0400040004000400040004000400#', creationTime: dt};
                        res_string = "睡眠指令已提交,定位器每天中午12点签到服务器一次，建议提交撤防指令，让定位器每天签到服务器4次"
                        }
                      else if (s1 == "紧急"){
                           cmd = "*HQ,000,S41,130305,6,7#"
-                          sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,7#', creationTime: dt};
+                          sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,7#', creationTime: dt};
                           res_string = "紧急指令已提交,定位器下次签到时，会马上启动GPS定位！追踪完毕后，请及时提交撤防指令，否则电池会在1天内耗尽"                          
+                       }
+                     else if (s1 == "改名"){
+                          sql_string  = {description: s2};
+                          res_string = "更改设备名称完成"                          
                        }; 
                        var res = rows[0];
                        if(rows.length > 0){
@@ -631,7 +640,10 @@ webot.set('@+', {
 
                        }
                       )
-
+                        if(s1== "改名"){
+                          mysql.query('UPDATE Device SET ? WHERE accountID ="'+acc+'" AND deviceID = "'+s0+'"',sql_string);    
+                           next(null, res_string)     
+                        }
                        }
                     else{
                       next(null, "无权限或设备名称错误")
@@ -648,23 +660,27 @@ webot.set('@+', {
                     var dt = Date.parse(new Date())/1000; 
                     if (s1 == "报警"){
                        cmd = "*HQ,000,S41,130305,6,4,2,2,2,2,2,2,2#"
-                       sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,2,2,2,2,2,2,2#', creationTime: dt};
+                       sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,2,2,2,2,2,2,2#', creationTime: dt};
                        res_string = "报警指令已提交,定位器下次签到时，会每小时回传一次GPS位置，追踪完毕后，请及时提交撤防指令，否则电池很快耗尽"
                        }
                     else if ( s1 == "撤防"){
                         cmd = "*HQ,000,S41,130305,6,4,1,1,1,1,1,1,1#"
-                        sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,1,1,1,1,1,1,1#', creationTime: dt};
+                        sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,4,1,1,1,1,1,1,1#', creationTime: dt};
                         res_string =  "撤防指令已提交，定位器每天签到服务器4次"
                        }
                     else if ( s1 == "睡眠"){
                        cmd = "HQ,000,S41,130305,6,1,1,1,1,1,1,1,1,0400040004000400040004000400#"
-                       sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,1,1,1,1,1,1,1,1,0400040004000400040004000400#', creationTime: dt};
+                       sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,1,1,1,1,1,1,1,1,0400040004000400040004000400#', creationTime: dt};
                        res_string = "睡眠指令已提交,定位器每天中午12点签到服务器一次，建议提交撤防指令，让定位器每天签到服务器4次"
                        }
                      else if (s1 == "紧急"){
                           cmd = "*HQ,000,S41,130305,6,7#"
-                          sql_string  = {accountID: acc, deviceID: s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,7#', creationTime: dt};
+                          sql_string  = {account设备号： acc, device设备号： s0,queueTime: dt, sendState: 0, commandArgs: '*HQ,000,S41,130305,6,7#', creationTime: dt};
                           res_string = "紧急指令已提交,定位器下次签到时，会马上启动GPS定位！追踪完毕后，请及时提交撤防指令，否则电池会在1天内耗尽"                          
+                       }
+                     else if (s1 == "改名"){
+                          sql_string  = {description: s2};
+                          res_string = "更改设备名称完成"                          
                        }; 
                     var res = rows[0];
                     // have account,start query cmd
@@ -693,6 +709,10 @@ webot.set('@+', {
 
                        }
                       )
+                        if(s1== "改名"){
+                          mysql.query('UPDATE Device SET ? WHERE accountID ="'+acc+'" AND deviceID = "'+s0+'"',sql_string);    
+                           next(null, res_string)     
+                        }
                           }// all group account vaild
                         else {
                            next(null, "无权限或设备名称错误:404")
