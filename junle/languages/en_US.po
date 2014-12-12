@@ -1,0 +1,3659 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Pager v1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-07-13 03:52:13+0000\n"
+"Last-Translator: admin <shakil@templatic.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:33
+#@ OnePager
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:37
+#@ OnePager
+msgid "Sorry, this page doesn't exist!"
+msgstr ""
+
+#: 404.php:38
+#@ OnePager
+msgid "The page you are looking for may have been removed, has a change in name or is temporarily unavailable."
+msgstr ""
+
+#: 404.php:46
+#, php-format
+#@ OnePager
+msgid "You tried going to %1$s, and it doesn't exist. All is not lost! You can search for what you're looking for."
+msgstr ""
+
+#: 404.php:53
+#: library/functions/widgets.php:1583
+#: library/functions/widgets.php:1662
+#: loop-error.php:23
+#: page-templates/sitemap.php:43
+#@ OnePager
+#@ hybrid-core
+msgid "Pages"
+msgstr ""
+
+#: 404.php:77
+#: loop-error.php:49
+#, php-format
+#@ supreme
+msgid "%s Categories"
+msgstr ""
+
+#: attachment.php:52
+#, php-format
+#@ OnePager
+msgid "Download \"%s\";"
+msgstr ""
+
+#: attachment.php:57
+#: content.php:51
+#: header.php:143
+#: index.php:43
+#: page-templates/advance-search.php:42
+#: page-templates/contact-us.php:107
+#: page-templates/front-page.php:25
+#: page-templates/front-page.php:67
+#: page-templates/front-page.php:116
+#: page-templates/front-page.php:166
+#: page-templates/front-page.php:215
+#: page-templates/front-page.php:266
+#: page.php:40
+#: post.php:50
+#: singular.php:46
+#@ OnePager
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: attachment.php:58
+#: content.php:52
+#: index.php:44
+#: page-templates/advance-search.php:43
+#: page-templates/front-page.php:26
+#: page.php:41
+#: post.php:51
+#: singular.php:47
+#@ OnePager
+msgid "Pages:"
+msgstr ""
+
+#: attachment.php:63
+#@ OnePager
+msgid "Gallery"
+msgstr ""
+
+#: comment.php:28
+#: comment.php:33
+#@ twentytwelve
+#@ OnePager
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php:14
+#@ OnePager
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: comments.php:29
+#: functions/theme-functions.php:252
+#: functions/theme-functions.php:292
+#@ OnePager
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:29
+#@ OnePager
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:29
+#: page-templates/archives.php:73
+#@ OnePager
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:35
+#, php-format
+#@ OnePager
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: comments.php:51
+#, php-format
+#@ OnePager
+msgid "Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: comments.php:57
+#@ OnePager
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:68
+#@ OnePager
+msgid "Your name"
+msgstr ""
+
+#: comments.php:72
+#@ OnePager
+msgid "Email Address"
+msgstr ""
+
+#: comments.php:76
+#: library/functions/comments.php:189
+#@ OnePager
+#@ supreme-core
+msgid "Website"
+msgstr ""
+
+#: comments.php:78
+#: functions/theme-functions.php:254
+#: functions/theme-functions.php:294
+#: library/functions/loadpopularpost.php:135
+#@ OnePager
+msgid "Comments"
+msgstr ""
+
+#: comments.php:82
+#@ OnePager
+msgid "Add a comment"
+msgstr ""
+
+#: content-audio.php:26
+#: content-image.php:1
+#: content-link.php:3
+#: content-video.php:26
+#: content.php:37
+#, php-format
+#@ OnePager
+msgid "Permalink to %s"
+msgstr ""
+
+#: content.php:5
+#@ OnePager
+msgid "Featured post"
+msgstr ""
+
+#: content.php:62
+#: functions.php:744
+#: index.php:48
+#: post.php:61
+#: singular.php:53
+#@ OnePager
+msgid "Categories:"
+msgstr ""
+
+#: content.php:62
+#: functions.php:745
+#: index.php:48
+#: post.php:61
+#: singular.php:53
+#@ OnePager
+msgid "Tags:"
+msgstr ""
+
+#: functions/theme-functions.php:98
+#@ OnePager
+msgid "Custom Image URL"
+msgstr ""
+
+#: functions/theme-functions.php:118
+#@ OnePager
+msgid "Enter image url , after enter URL please select <b>post format</b> image, so it will display as large image."
+msgstr ""
+
+#: functions/theme-functions.php:141
+#@ OnePager
+msgid "Column"
+msgstr ""
+
+#: functions/theme-functions.php:141
+#@ OnePager
+msgid "Columns"
+msgstr ""
+
+#: functions/theme-functions.php:146
+#@ OnePager
+msgid "Select the columns you want to show in listing of work."
+msgstr ""
+
+#: functions/theme-functions.php:207
+#@ OnePager
+msgid "Enter Image Url"
+msgstr ""
+
+#: functions/theme-functions.php:212
+#@ OnePager
+msgid "Enter image url which you want to display on room listing page."
+msgstr ""
+
+#: functions/theme-functions.php:256
+#: functions/theme-functions.php:296
+#@ OnePager
+msgid "1 Comment"
+msgstr ""
+
+#: functions/theme-functions.php:271
+#: functions/theme-functions.php:311
+#: library/functions/hooks.php:41
+#: library/functions/shortcodes.php:261
+#, php-format
+#@ supreme-core
+msgid "Edit %1$s"
+msgstr ""
+
+#: functions/theme-functions.php:271
+#: functions/theme-functions.php:311
+#: functions/theme-post_type.php:16
+#: library/functions/hooks.php:41
+#: library/functions/shortcodes.php:261
+#: library/functions/widgets.php:2103
+#@ supreme-core
+#@ templatic
+#@ hybrid-core
+msgid "Edit"
+msgstr ""
+
+#: functions/theme-functions.php:273
+#: functions/theme-functions.php:314
+#: library/functions/hooks.php:88
+#@ OnePager
+msgid "Published by"
+msgstr ""
+
+#: functions/theme-functions.php:275
+#: functions/theme-functions.php:317
+#: library/functions/hooks.php:51
+#@ OnePager
+msgid "On"
+msgstr ""
+
+#: functions/theme-functions.php:276
+#: functions/theme-functions.php:319
+#, php-format
+#@ OnePager
+msgid "%s %s %s %s"
+msgstr ""
+
+#: functions/theme-functions.php:394
+#@ OnePager
+msgid "Use as home page sections"
+msgstr ""
+
+#: functions/theme-functions.php:409
+#@ OnePager
+msgid "Banner Id "
+msgstr ""
+
+#: functions/theme-functions.php:411
+#@ OnePager
+msgid "Section "
+msgstr ""
+
+#: functions/theme-functions.php:422
+#: functions/theme-functions.php:424
+#@ OnePager
+msgid "Page"
+msgstr ""
+
+#: functions/theme-functions.php:429
+#@ OnePager
+msgid "Select page"
+msgstr ""
+
+#: functions/theme-post_type.php:11
+#: functions/theme-post_type.php:12
+#: functions/theme-post_type.php:13
+#@ templatic
+msgid "Portfolio"
+msgstr ""
+
+#: functions/theme-post_type.php:14
+#@ templatic
+msgid "Add Work"
+msgstr ""
+
+#: functions/theme-post_type.php:15
+#@ templatic
+msgid "Add New Work"
+msgstr ""
+
+#: functions/theme-post_type.php:17
+#@ templatic
+msgid "Edit Work"
+msgstr ""
+
+#: functions/theme-post_type.php:18
+#@ templatic
+msgid "New Work"
+msgstr ""
+
+#: functions/theme-post_type.php:19
+#@ templatic
+msgid "View Work"
+msgstr ""
+
+#: functions/theme-post_type.php:20
+#@ templatic
+msgid "Search Work"
+msgstr ""
+
+#: functions/theme-post_type.php:21
+#@ templatic
+msgid "No Work found"
+msgstr ""
+
+#: functions/theme-post_type.php:22
+#@ templatic
+msgid "No Work found in trash"
+msgstr ""
+
+#: functions/theme-post_type.php:24
+#: functions/theme-post_type.php:25
+#@ templatic
+msgid "Type of work"
+msgstr ""
+
+#: functions/theme-post_type.php:26
+#: page-templates/advance-search.php:102
+#@ templatic
+#@ OnePager
+msgid "Category"
+msgstr ""
+
+#: functions/theme-post_type.php:27
+#@ templatic
+msgid "Search Category"
+msgstr ""
+
+#: functions/theme-post_type.php:28
+#@ templatic
+msgid "Popular Categories"
+msgstr ""
+
+#: functions/theme-post_type.php:29
+#@ templatic
+msgid "All Categories"
+msgstr ""
+
+#: functions/theme-post_type.php:30
+#@ templatic
+msgid "Parent Category"
+msgstr ""
+
+#: functions/theme-post_type.php:31
+#@ templatic
+msgid "Parent Category:"
+msgstr ""
+
+#: functions/theme-post_type.php:32
+#@ templatic
+msgid "Edit Category"
+msgstr ""
+
+#: functions/theme-post_type.php:33
+#@ templatic
+msgid "Update Category"
+msgstr ""
+
+#: functions/theme-post_type.php:34
+#@ templatic
+msgid "Add New Category"
+msgstr ""
+
+#: functions/theme-post_type.php:35
+#@ templatic
+msgid "New Category Name"
+msgstr ""
+
+#: functions/theme-post_type.php:37
+#: functions/theme-post_type.php:38
+#: functions/theme-post_type.php:39
+#: functions/theme-post_type.php:40
+#: functions/theme-post_type.php:148
+#: library/functions/widgets.php:1986
+#: library/functions/widgets.php:2075
+#: page-templates/advance-search.php:64
+#: page-templates/advance-search.php:65
+#@ templatic
+#@ OnePager
+#@ hybrid-core
+msgid "Tags"
+msgstr ""
+
+#: functions/theme-post_type.php:41
+#@ templatic
+msgid "Popular Tags"
+msgstr ""
+
+#: functions/theme-post_type.php:42
+#@ templatic
+msgid "All Tags"
+msgstr ""
+
+#: functions/theme-post_type.php:43
+#@ templatic
+msgid "Parent Tags"
+msgstr ""
+
+#: functions/theme-post_type.php:44
+#@ templatic
+msgid "Parent Tags:"
+msgstr ""
+
+#: functions/theme-post_type.php:45
+#@ templatic
+msgid "Edit Tags"
+msgstr ""
+
+#: functions/theme-post_type.php:46
+#@ templatic
+msgid "Update Tags"
+msgstr ""
+
+#: functions/theme-post_type.php:47
+#@ templatic
+msgid "Add New Tags"
+msgstr ""
+
+#: functions/theme-post_type.php:48
+#@ templatic
+msgid "New Tags Name"
+msgstr ""
+
+#: functions/theme-post_type.php:147
+#: library/functions/widgets.php:1123
+#: library/functions/widgets.php:1210
+#@ OnePager
+#@ hybrid-core
+msgid "Categories"
+msgstr ""
+
+#: functions/theme-post_type.php:149
+#: library/functions/widgets.php:1688
+#: library/functions/widgets.php:4179
+#: page-templates/advance-search.php:122
+#@ OnePager
+#@ hybrid-core
+msgid "Date"
+msgstr ""
+
+#: functions/theme-post_type.php:170
+#@ OnePager
+msgid "Uncategorized"
+msgstr ""
+
+#: functions/theme-widgets.php:8
+#@ OnePager
+msgctxt "sidebar"
+msgid "Home Page After Content 1"
+msgstr ""
+
+#: functions/theme-widgets.php:9
+#@ OnePager
+msgid "Widgets placed here will be visible below the home page content area."
+msgstr ""
+
+#: functions/theme-widgets.php:16
+#@ OnePager
+msgctxt "sidebar"
+msgid "Home Page After Content 2"
+msgstr ""
+
+#: functions/theme-widgets.php:17
+#@ OnePager
+msgid "Widgets placed here will be visible below the home page after content 1."
+msgstr ""
+
+#: functions/theme-widgets.php:24
+#@ OnePager
+msgctxt "sidebar"
+msgid "Home Page After Content 3"
+msgstr ""
+
+#: functions/theme-widgets.php:25
+#@ OnePager
+msgid "Widgets placed here will be visible below the home page after content 2."
+msgstr ""
+
+#: functions/theme-widgets.php:32
+#@ OnePager
+msgctxt "sidebar"
+msgid "Home Page After Content 4"
+msgstr ""
+
+#: functions/theme-widgets.php:33
+#@ OnePager
+msgid "Widgets placed here will be visible below the home page after content 3."
+msgstr ""
+
+#: functions/theme-widgets.php:40
+#@ OnePager
+msgctxt "sidebar"
+msgid "Home Page Full Slider"
+msgstr ""
+
+#: functions/theme-widgets.php:41
+#@ OnePager
+msgid "Place home page slider widget here , it will be visible after header."
+msgstr ""
+
+#: functions/theme-widgets.php:48
+#@ OnePager
+msgctxt "sidebar"
+msgid "After Footer with 3 columns"
+msgstr ""
+
+#: functions/theme-widgets.php:49
+#@ OnePager
+msgid "This area has 3 columns and so widgets placed here will appear in 3 divisions vertically."
+msgstr ""
+
+#: functions/theme-widgets.php:80
+#@ templatic
+msgid "Displays about you and your team with detailed information such as email,designation,fb-link,twitter etc."
+msgstr ""
+
+#: functions/theme-widgets.php:81
+#@ templatic
+msgid "T &rarr; About Team"
+msgstr ""
+
+#: functions/theme-widgets.php:99
+#: functions/theme-widgets.php:100
+#: library/functions/tlogin.php:79
+#: library/functions/widgets.php:194
+#: library/functions/widgets.php:2429
+#: library/functions/widgets.php:2845
+#: library/functions/widgets.php:3166
+#: library/functions/widgets.php:3695
+#: library/templatic_login.php:106
+#: page-templates/sitemap.php:104
+#: page-templates/sitemap.php:137
+#, php-format
+#@ OnePager
+#@ templatic
+msgid "%s"
+msgstr ""
+
+#: functions/theme-widgets.php:176
+#@ templatic
+msgid "Title: "
+msgstr ""
+
+#: functions/theme-widgets.php:183
+#: library/functions/widgets.php:217
+#: library/functions/widgets.php:486
+#@ templatic
+#@ OnePager
+msgid "Description:"
+msgstr ""
+
+#: functions/theme-widgets.php:187
+#@ OnePager
+msgid "Team Members"
+msgstr ""
+
+#: functions/theme-widgets.php:190
+#@ OnePager
+msgid "Name 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:197
+#@ OnePager
+msgid "Email-ID 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:197
+#@ OnePager
+msgid "(Used to get photo from gravatar)"
+msgstr ""
+
+#: functions/theme-widgets.php:203
+#@ OnePager
+msgid "OR"
+msgstr ""
+
+#: functions/theme-widgets.php:203
+#@ OnePager
+msgid "Link to your photo: "
+msgstr ""
+
+#: functions/theme-widgets.php:209
+#@ OnePager
+msgid "Designation 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:215
+#@ OnePager
+msgid "FB Link 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:221
+#@ OnePager
+msgid "Twitter Link 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:227
+#@ OnePager
+msgid "Linked-In Link 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:346
+#@ default
+msgid "Displays services on home page."
+msgstr ""
+
+#: functions/theme-widgets.php:347
+#@ default
+msgid "T &rarr; Services"
+msgstr ""
+
+#: functions/theme-widgets.php:412
+#@ templatic
+msgid "Title : "
+msgstr ""
+
+#: functions/theme-widgets.php:419
+#@ templatic
+msgid "Description : "
+msgstr ""
+
+#: functions/theme-widgets.php:426
+#@ templatic
+msgid "Read More Text: "
+msgstr ""
+
+#: functions/theme-widgets.php:435
+#@ default
+msgid "Link Text 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:441
+#@ default
+msgid "Link Description 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:448
+#@ default
+msgid "Link Url 1: "
+msgstr ""
+
+#: functions/theme-widgets.php:531
+#@ templatic
+msgid "Display Post listing using jquery."
+msgstr ""
+
+#: functions/theme-widgets.php:532
+#@ templatic
+msgid "T &rarr; jQuery Post Listing"
+msgstr ""
+
+#: functions/theme-widgets.php:546
+#: library/functions/widgets.php:212
+#: library/functions/widgets.php:384
+#: library/functions/widgets.php:481
+#: library/functions/widgets.php:623
+#: library/functions/widgets.php:851
+#: library/functions/widgets.php:1084
+#: library/functions/widgets.php:1247
+#: library/functions/widgets.php:1480
+#: library/functions/widgets.php:1696
+#: library/functions/widgets.php:1930
+#: library/functions/widgets.php:2113
+#: library/functions/widgets.php:2704
+#: library/functions/widgets.php:4120
+#@ OnePager
+#@ hybrid-core
+#@ templatic
+msgid "Title:"
+msgstr ""
+
+#: functions/theme-widgets.php:551
+#: library/functions/widgets.php:4125
+#: library/functions/widgets.php:4366
+#@ OnePager
+msgid "Select Post type:"
+msgstr ""
+
+#: functions/theme-widgets.php:567
+#: library/functions/widgets.php:3542
+#: library/functions/widgets.php:4172
+#@ OnePager
+msgid "Number of posts:"
+msgstr ""
+
+#: functions/theme-widgets.php:574
+#: library/functions/widgets.php:4207
+#@ OnePager
+msgid "Show Featured Image"
+msgstr ""
+
+#: functions/theme-widgets.php:757
+#: library/functions/widgets.php:110
+#@ OnePager
+msgid "Show the advertisements. here You can paste HTML, JavaScript, an IFrame into this widget.you can place this widget in header right or entry area."
+msgstr ""
+
+#: functions/theme-widgets.php:758
+#: library/functions/widgets.php:111
+#@ OnePager
+msgid "T &rarr; Advertisements"
+msgstr ""
+
+#: functions/theme-widgets.php:806
+#: library/classes/twitter.php:9
+#: library/functions/widgets.php:153
+#: library/functions/widgets.php:1688
+#: library/functions/widgets.php:2348
+#: library/functions/widgets.php:2460
+#: library/functions/widgets.php:2811
+#: library/functions/widgets.php:4180
+#: library/functions/widgets.php:4362
+#@ OnePager
+#@ hybrid-core
+msgid "Title"
+msgstr ""
+
+#: functions/theme-widgets.php:810
+#@ OnePager
+msgid "Background image url"
+msgstr ""
+
+#: functions/theme-widgets.php:815
+#: library/functions/widgets.php:158
+#@ OnePager
+msgid "Advertisement code <small>(ex.&lt;a href=\"#\"&gt;&lt;img src=\"http://templatic.com/banner.png\" /&gt;&lt;/a&gt; and google ads code here )</small>"
+msgstr ""
+
+#: functions.php:373
+#@ OnePager
+msgid "Header Image Url"
+msgstr ""
+
+#: functions.php:375
+#@ OnePager
+msgid "Enter image url which you want to display as header image for that page.(1975px X 210px)"
+msgstr ""
+
+#: functions.php:812
+#@ default
+msgid "Author Email 1"
+msgstr ""
+
+#: functions.php:936
+#@ OnePager
+msgid "Posted by"
+msgstr ""
+
+#: functions.php:936
+#@ OnePager
+msgid "In"
+msgstr ""
+
+#: header.php:83
+#: header.php:93
+#: library/functions/functions.php:1314
+#: library/functions/menus.php:63
+#: library/functions/menus.php:91
+#: library/functions/menus.php:124
+#: library/functions/menus.php:185
+#@ OnePager
+msgid "Menu"
+msgstr ""
+
+#: index.php:64
+#@ OnePager
+msgid "No Entries"
+msgstr ""
+
+#: index.php:67
+#@ OnePager
+msgid "Apologies, but no entries were found."
+msgstr ""
+
+#: library/admin/admin.php:154
+#: library/admin/admin.php:180
+#@ supreme-core
+#@ OnePager
+msgid "Footer"
+msgstr ""
+
+#: library/admin/admin.php:279
+#@ OnePager
+msgid "You do not have sufficient permissions to access this section."
+msgstr ""
+
+#: library/admin/admin.php:318
+#@ OnePager
+msgid "Colors Settings"
+msgstr ""
+
+#: library/admin/admin.php:323
+#@ OnePager
+msgid "Background Settings"
+msgstr ""
+
+#: library/admin/admin.php:548
+#@ OnePager
+msgid "Read More"
+msgstr ""
+
+#: library/admin/admin.php:874
+#@ OnePager
+msgid " Upload image for logo"
+msgstr ""
+
+#: library/admin/admin.php:886
+#@ OnePager
+msgid " Upload favicon icon"
+msgstr ""
+
+#: library/admin/admin.php:899
+#@ OnePager
+msgid "Hide Site Description"
+msgstr ""
+
+#: library/admin/admin.php:915
+#@ OnePager
+msgid "Hide autoinstall"
+msgstr ""
+
+#: library/admin/admin.php:931
+#@ OnePager
+msgid "Use custom css"
+msgstr ""
+
+#: library/admin/admin.php:947
+#@ OnePager
+msgid "Enable comments on page"
+msgstr ""
+
+#: library/admin/admin.php:963
+#@ OnePager
+msgid "Enable comments on post"
+msgstr ""
+
+#: library/admin/admin.php:978
+#@ OnePager
+msgid "Enable sticky header menu"
+msgstr ""
+
+#: library/admin/admin.php:994
+#@ OnePager
+msgid "Show author biography on posts"
+msgstr ""
+
+#: library/admin/admin.php:1009
+#@ OnePager
+msgid "Show author biography on pages"
+msgstr ""
+
+#: library/admin/admin.php:1024
+#@ OnePager
+msgid "Show Breadcrumb"
+msgstr ""
+
+#: library/admin/admin.php:1040
+#@ OnePager
+msgid "Global Layout"
+msgstr ""
+
+#: library/admin/admin.php:1062
+#@ OnePager
+msgid "WooCommerce Layout"
+msgstr ""
+
+#: library/admin/admin.php:1085
+#@ OnePager
+msgid "Show captcha"
+msgstr ""
+
+#: library/admin/admin.php:1104
+#@ OnePager
+msgid "Show inquiry form"
+msgstr ""
+
+#: library/admin/admin.php:1121
+#@ OnePager
+msgid "Display Images"
+msgstr ""
+
+#: library/admin/admin.php:1138
+#@ OnePager
+msgid "Display No-Image-Available "
+msgstr ""
+
+#: library/admin/admin.php:1155
+#@ OnePager
+msgid "Display excerpts"
+msgstr ""
+
+#: library/admin/admin.php:1185
+#@ OnePager
+msgid "Enter comma saperated post type slug(s) which you want to display on 404 page"
+msgstr ""
+
+#: library/admin/admin.php:1191
+#@ OnePager
+msgid "Footer Text ( e.g. <p class=\"copyright\">&copy; 2011 <a href=\"http://templatic.com/demos/responsive\">Responsive</a>. All Rights Reserved. </p>)"
+msgstr ""
+
+#: library/admin/admin.php:1197
+#@ OnePager
+msgid "Post type slug(s):"
+msgstr ""
+
+#: library/admin/admin.php:1205
+#@ OnePager
+msgid "You can add Google Analytics tracking code here."
+msgstr ""
+
+#: library/admin/admin.php:1212
+#@ OnePager
+msgid "Add google analytics code"
+msgstr ""
+
+#: library/admin/admin.php:1228
+#@ templatic
+msgid "Body Background Color"
+msgstr ""
+
+#: library/admin/admin.php:1235
+#@ templatic
+msgid "Links, Headings, Titles and Buttons Color"
+msgstr ""
+
+#: library/admin/admin.php:1242
+#@ templatic
+msgid "Page Content Color"
+msgstr ""
+
+#: library/admin/admin.php:1249
+#@ templatic
+msgid "Sub Text Color"
+msgstr ""
+
+#: library/admin/admin.php:1256
+#@ templatic
+msgid "Navigation Color"
+msgstr ""
+
+#: library/admin/admin.php:1271
+#@ templatic
+msgid "Texture Overlays"
+msgstr ""
+
+#: library/admin/admin.php:1277
+#@ OnePager
+msgid "OR Enter Your Custom Texture"
+msgstr ""
+
+#: library/admin/admin.php:1294
+#@ OnePager
+msgid "Display Header Image ( Go in Appearance -> Header to set/change the image )"
+msgstr ""
+
+#: library/admin/admin.php:1310
+#@ OnePager
+msgid "Display Header Text"
+msgstr ""
+
+#: library/admin/admin.php:1323
+#@ OnePager
+msgid "Display Author Name"
+msgstr ""
+
+#: library/admin/admin.php:1336
+#@ OnePager
+msgid "Display Publish Date"
+msgstr ""
+
+#: library/admin/admin.php:1349
+#@ OnePager
+msgid "Display Terms of Post"
+msgstr ""
+
+#: library/admin/admin.php:1366
+#@ OnePager
+msgid "Excerpt length"
+msgstr ""
+
+#: library/admin/admin.php:1382
+#@ OnePager
+msgid "Text for Continue reading"
+msgstr ""
+
+#: library/admin/admin.php:1398
+#@ OnePager
+msgid "Enable view counter"
+msgstr ""
+
+#: library/admin/admin.php:1415
+#@ OnePager
+msgid "Enable Facebook share button"
+msgstr ""
+
+#: library/admin/admin.php:1432
+#@ OnePager
+msgid "Enable Google share button"
+msgstr ""
+
+#: library/admin/admin.php:1449
+#@ OnePager
+msgid "Enable Twitter share button"
+msgstr ""
+
+#: library/admin/admin.php:1466
+#@ OnePager
+msgid "Enable pintrest share button"
+msgstr ""
+
+#: library/admin/admin.php:1951
+#: library/functions/widgets.php:649
+#: library/functions/widgets.php:1238
+#@ OnePager
+#@ hybrid-core
+msgid "None"
+msgstr ""
+
+#: library/admin/admin.php:2050
+#@ debug-bar
+msgid "Customization"
+msgstr ""
+
+#: library/admin/meta-boxes.php:36
+#@ supreme-core
+msgid "Template"
+msgstr ""
+
+#: library/admin/meta-boxes.php:63
+#@ supreme-core
+msgid "No templates exist for this post type."
+msgstr ""
+
+#: library/admin/meta-boxes.php:150
+#@ supreme-core
+msgid "SEO"
+msgstr ""
+
+#: library/admin/meta-boxes.php:163
+#@ supreme-core
+msgid "Document Title"
+msgstr ""
+
+#: library/admin/meta-boxes.php:169
+#@ supreme-core
+msgid "Meta Description"
+msgstr ""
+
+#: library/admin/meta-boxes.php:175
+#@ supreme-core
+msgid "Meta Keywords"
+msgstr ""
+
+#: library/classes/facebook.php:9
+#@ OnePager
+msgid "Show your facebook fans on your site."
+msgstr ""
+
+#: library/classes/facebook.php:10
+#@ OnePager
+msgid "T &rarr; Facebook Fans"
+msgstr ""
+
+#: library/classes/facebook.php:55
+#@ OnePager
+msgid "Facebook Page Full URL"
+msgstr ""
+
+#: library/classes/facebook.php:60
+#@ OnePager
+msgid "Width"
+msgstr ""
+
+#: library/classes/facebook.php:65
+#@ OnePager
+msgid "Show Faces"
+msgstr ""
+
+#: library/classes/facebook.php:67
+#: library/classes/facebook.php:75
+#: library/classes/facebook.php:83
+#: library/functions/widgets.php:3405
+#@ OnePager
+#@ templatic
+msgid "Yes"
+msgstr ""
+
+#: library/classes/facebook.php:68
+#: library/classes/facebook.php:76
+#: library/classes/facebook.php:84
+#: library/functions/widgets.php:3408
+#@ OnePager
+#@ templatic
+msgid "No"
+msgstr ""
+
+#: library/classes/facebook.php:73
+#@ OnePager
+msgid "Show Stream"
+msgstr ""
+
+#: library/classes/facebook.php:81
+#@ OnePager
+msgid "Show Header"
+msgstr ""
+
+#: library/classes/twitter.php:14
+#@ OnePager
+msgid "Twitter Username"
+msgstr ""
+
+#: library/classes/twitter.php:19
+#@ OnePager
+msgid "Consumer Key"
+msgstr ""
+
+#: library/classes/twitter.php:24
+#@ OnePager
+msgid "Consumer Secret"
+msgstr ""
+
+#: library/classes/twitter.php:29
+#@ OnePager
+msgid "Access Token"
+msgstr ""
+
+#: library/classes/twitter.php:34
+#@ OnePager
+msgid "Access Token Secret"
+msgstr ""
+
+#: library/classes/twitter.php:39
+#@ OnePager
+msgid "Number Of Tweets"
+msgstr ""
+
+#: library/classes/twitter.php:44
+#@ OnePager
+msgid "Twitter button text <small>(for eg. Follow us, Join me on Twitter, etc.)</small>"
+msgstr ""
+
+#: library/classes/twitter.php:50
+#@ templatic
+msgid "Show your latest tweets on your site."
+msgstr ""
+
+#: library/classes/twitter.php:52
+#@ templatic
+msgid "T &rarr; Latest Twitter Feeds"
+msgstr ""
+
+#: library/classes/twitter.php:92
+#@ OnePager
+msgid "Latest Tweets"
+msgstr ""
+
+#: library/classes/twitter.php:99
+#@ templatic
+msgid "Follow Us"
+msgstr ""
+
+#: library/classes/twitter.php:126
+#@ templatic
+msgid "0 seconds"
+msgstr ""
+
+#: library/classes/twitter.php:129
+#: library/functions/loadpopularpost.php:87
+#@ OnePager
+msgid "year"
+msgstr ""
+
+#: library/classes/twitter.php:130
+#: library/functions/loadpopularpost.php:85
+#@ OnePager
+msgid "month"
+msgstr ""
+
+#: library/classes/twitter.php:131
+#: library/functions/loadpopularpost.php:81
+#@ OnePager
+msgid "day"
+msgstr ""
+
+#: library/classes/twitter.php:132
+#@ OnePager
+msgid "hour"
+msgstr ""
+
+#: library/classes/twitter.php:133
+#@ OnePager
+msgid "minute"
+msgstr ""
+
+#: library/classes/twitter.php:134
+#@ OnePager
+msgid "second"
+msgstr ""
+
+#: library/classes/twitter.php:141
+#@ OnePager
+msgid " s"
+msgstr ""
+
+#: library/classes/twitter.php:141
+#: library/functions/loadpopularpost.php:152
+#@ OnePager
+msgid "ago"
+msgstr ""
+
+#: library/classes/twitter.php:164
+#@ templatic
+msgid "No public tweets"
+msgstr ""
+
+#: library/classes/twitter.php:168
+#@ templatic
+msgid "Unable to get tweets"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:45
+#@ breadcrumb-trail
+msgid "Home"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:301
+#: library/functions/context.php:431
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "g:i a"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:304
+#, php-format
+#@ breadcrumb-trail
+msgid "Minute %1$s"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:304
+#: library/functions/context.php:434
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "i"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:307
+#: library/functions/context.php:437
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "g a"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:318
+#: library/extensions/breadcrumb-trail.php:324
+#: library/extensions/breadcrumb-trail.php:329
+#: library/extensions/breadcrumb-trail.php:334
+#: library/extensions/breadcrumb-trail.php:397
+#: library/functions/context.php:443
+#: library/functions/context.php:449
+#: library/functions/core-seo.php:90
+#: library/functions/shortcodes.php:92
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "Y"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:319
+#: library/extensions/breadcrumb-trail.php:330
+#: library/extensions/breadcrumb-trail.php:401
+#@ breadcrumb-trail
+msgid "F"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:320
+#: library/extensions/breadcrumb-trail.php:405
+#@ breadcrumb-trail
+msgid "d"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:325
+#, php-format
+#@ breadcrumb-trail
+msgid "Week %1$s"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:325
+#: library/functions/context.php:443
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "W"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:341
+#: library/functions/context.php:460
+#, php-format
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "Search results for &quot;%1$s&quot;"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:345
+#: library/functions/context.php:464
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "404 Not Found"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:401
+#: library/functions/core-seo.php:86
+#@ breadcrumb-trail
+#@ supreme-core
+msgid "F Y"
+msgstr ""
+
+#: library/extensions/breadcrumb-trail.php:405
+#@ breadcrumb-trail
+msgid "F j, Y"
+msgstr ""
+
+#: library/extensions/post-stylesheets.php:177
+#@ post-stylesheets
+msgid "Stylesheet"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:282
+#: library/functions/functions.php:1472
+#@ theme-layouts
+msgid "Default"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:283
+#: library/functions/functions.php:1473
+#@ theme-layouts
+msgid "One Column"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:284
+#: library/functions/functions.php:1474
+#@ theme-layouts
+msgid "Two Columns, Left"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:285
+#: library/functions/functions.php:1475
+#@ theme-layouts
+msgid "Two Columns, Right"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:286
+#: library/functions/functions.php:1477
+#@ theme-layouts
+msgid "Three Columns, Left"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:287
+#: library/functions/functions.php:1478
+#@ theme-layouts
+msgid "Three Columns, Right"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:288
+#: library/functions/functions.php:1476
+#@ theme-layouts
+msgid "Three Columns, Center"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:364
+#: library/extensions/theme-layouts.php:472
+#@ theme-layouts
+msgid "Layout"
+msgstr ""
+
+#: library/extensions/theme-layouts.php:391
+#@ theme-layouts
+msgid "Layout is a theme-specific structure for the single view of the post."
+msgstr ""
+
+#: library/framework_update.php:82
+#@ OnePager
+msgid "Framework Update"
+msgstr ""
+
+#: library/framework_update.php:89
+#@ OnePager
+msgid "A new version of Framework is available."
+msgstr ""
+
+#: library/framework_update.php:90
+#@ OnePager
+msgid "This updater will download and extract the latest Framework files to your current themes functions folder."
+msgstr ""
+
+#: library/framework_update.php:91
+#@ OnePager
+msgid "We recommend backing up your theme files and updating WordPress to latest version before proceeding."
+msgstr ""
+
+#: library/framework_update.php:102
+#@ OnePager
+msgid "You have the latest version of Framework"
+msgstr ""
+
+#: library/framework_update.php:103
+#: library/templatic_login.php:143
+#, php-format
+#@ OnePager
+msgid "<strong>Your version:</strong> %s"
+msgstr ""
+
+#: library/framework_update.php:262
+#: wp_theme_update.php:54
+#: wp_theme_update.php:108
+#, php-format
+#@ Framework
+#@ OnePager
+msgid "View version %s Details"
+msgstr ""
+
+#: library/framework_update.php:283
+#@ OnePager
+msgid "Oops!! Something went wrong.<br/>Please try again or <a href='http://www.templatic.com'>contact us</a>."
+msgstr ""
+
+#: library/functions/comments.php:182
+#@ supreme-core
+msgid "*"
+msgstr ""
+
+#: library/functions/comments.php:187
+#: library/functions/widgets.php:843
+#: library/functions/widgets.php:845
+#: library/functions/widgets.php:1240
+#: library/functions/widgets.php:2106
+#: library/functions/widgets.php:2629
+#: library/functions/widgets.php:2662
+#: library/functions/widgets.php:3707
+#: page-templates/contact-us.php:152
+#@ supreme-core
+#@ hybrid-core
+#@ OnePager
+msgid "Name"
+msgstr ""
+
+#: library/functions/comments.php:188
+#: library/functions/widgets.php:617
+#: library/functions/widgets.php:3708
+#: library/functions/widgets.php:3897
+#: page-templates/contact-us.php:159
+#@ supreme-core
+#@ hybrid-core
+#@ OnePager
+msgid "Email"
+msgstr ""
+
+#: library/functions/comments.php:195
+#: library/functions/loadpopularpost.php:133
+#@ supreme-core
+#@ OnePager
+msgid "Comment"
+msgstr ""
+
+#: library/functions/comments.php:196
+#, php-format
+#@ supreme-core
+msgid "You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr ""
+
+#: library/functions/comments.php:197
+#, php-format
+#@ supreme-core
+msgid "Logged in as <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+msgstr ""
+
+#: library/functions/comments.php:197
+#@ supreme-core
+msgid "Log out of this account"
+msgstr ""
+
+#: library/functions/comments.php:197
+#@ supreme-core
+msgid "Log out &raquo;"
+msgstr ""
+
+#: library/functions/comments.php:202
+#@ supreme-core
+msgid "Leave a Reply"
+msgstr ""
+
+#: library/functions/comments.php:203
+#, php-format
+#@ supreme-core
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: library/functions/comments.php:204
+#@ supreme-core
+msgid "Click here to cancel reply."
+msgstr ""
+
+#: library/functions/comments.php:205
+#@ supreme-core
+msgid "Post Comment"
+msgstr ""
+
+#: library/functions/context.php:431
+#: library/functions/context.php:437
+#: library/functions/context.php:440
+#: library/functions/context.php:446
+#: library/functions/context.php:449
+#, php-format
+#@ supreme-core
+msgid "Archive for %1$s"
+msgstr ""
+
+#: library/functions/context.php:434
+#, php-format
+#@ supreme-core
+msgid "Archive for minute %1$s"
+msgstr ""
+
+#: library/functions/context.php:440
+#@ supreme-core
+msgid "F jS, Y"
+msgstr ""
+
+#: library/functions/context.php:443
+#, php-format
+#@ supreme-core
+msgid "Archive for week %1$s of %2$s"
+msgstr ""
+
+#: library/functions/context.php:454
+#: library/functions/widgets.php:266
+#: library/functions/widgets.php:363
+#: loop-meta.php:214
+#: page-templates/sitemap.php:156
+#@ supreme-core
+#@ hybrid-core
+#@ OnePager
+msgid "Archives"
+msgstr ""
+
+#: library/functions/context.php:468
+#, php-format
+#@ supreme-core
+msgid "%1$s Page %2$s"
+msgstr ""
+
+#: library/functions/core-seo.php:93
+#, php-format
+#@ supreme-core
+msgid "Copyright (c) %1$s"
+msgstr ""
+
+#: library/functions/core-seo.php:112
+#: library/functions/hooks.php:53
+#: library/functions/shortcodes.php:188
+#@ supreme-core
+msgid "l, F jS, Y, g:i a"
+msgstr ""
+
+#: library/functions/functions.php:14
+#: library/functions/functions.php:17
+#@ twentytwelve
+msgid ", "
+msgstr ""
+
+#: library/functions/functions.php:28
+#, php-format
+#@ twentytwelve
+msgid "View all posts by %s"
+msgstr ""
+
+#: library/functions/functions.php:34
+#, php-format
+#@ twentytwelve
+msgid "This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: library/functions/functions.php:36
+#, php-format
+#@ twentytwelve
+msgid "This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: library/functions/functions.php:38
+#, php-format
+#@ twentytwelve
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: library/functions/functions.php:417
+#: library/functions/functions.php:421
+#@ supreme-core
+msgid "Copyright &#169; [the-year] [site-link]."
+msgstr ""
+
+#: library/functions/functions.php:417
+#@ supreme-core
+msgid "Powered by [wp-link], [theme-link], and [child-link]."
+msgstr ""
+
+#: library/functions/functions.php:421
+#@ supreme-core
+msgid "Powered by [wp-link] and [theme-link]."
+msgstr ""
+
+#: library/functions/functions.php:456
+#@ OnePager
+msgid "[entry-terms taxonomy=\"\" before=\" \"] [entry-terms taxonomy=\"\" before=\" \"]"
+msgstr ""
+
+#: library/functions/functions.php:791
+#@ OnePager
+msgid "Read More ->"
+msgstr ""
+
+#: library/functions/functions.php:851
+#@ OnePager
+msgid "<span class=\"meta-nav\">&larr;</span> Return to entry"
+msgstr ""
+
+#: library/functions/functions.php:856
+#: library/functions/functions.php:860
+#: library/functions/functions.php:861
+#@ OnePager
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: library/functions/functions.php:857
+#: library/functions/functions.php:860
+#@ OnePager
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: library/functions/functions.php:861
+#@ OnePager
+msgid "Next &rarr;"
+msgstr ""
+
+#: library/functions/functions.php:934
+#@ OnePager
+msgid "Read more &raquo;"
+msgstr ""
+
+#: library/functions/functions.php:1151
+#@ OnePager
+msgid "time"
+msgstr ""
+
+#: library/functions/functions.php:1153
+#@ OnePager
+msgid "times"
+msgstr ""
+
+#: library/functions/functions.php:1157
+#@ OnePager
+msgid "Visit"
+msgstr ""
+
+#: library/functions/functions.php:1159
+#@ OnePager
+msgid "Visits"
+msgstr ""
+
+#: library/functions/functions.php:1161
+#@ OnePager
+msgid "Visited"
+msgstr ""
+
+#: library/functions/functions.php:1161
+#, php-format
+#@ OnePager
+msgid " %s"
+msgstr ""
+
+#: library/functions/functions.php:1162
+#@ OnePager
+msgid "today"
+msgstr ""
+
+#: library/functions/functions.php:1479
+#@ theme-layouts
+msgid "Header Left One Column"
+msgstr ""
+
+#: library/functions/functions.php:1480
+#@ theme-layouts
+msgid "Header Left Two Columns, Left"
+msgstr ""
+
+#: library/functions/functions.php:1481
+#@ theme-layouts
+msgid "Header Left Two Columns, Right"
+msgstr ""
+
+#: library/functions/functions.php:1482
+#@ theme-layouts
+msgid "Header Right One Column"
+msgstr ""
+
+#: library/functions/functions.php:1483
+#@ theme-layouts
+msgid "Header Right Two Columns, Left"
+msgstr ""
+
+#: library/functions/functions.php:1484
+#@ theme-layouts
+msgid "Header Right Two Columns, Right"
+msgstr ""
+
+#: library/functions/functions.php:1815
+#@ OnePager
+msgid "Facebook Share."
+msgstr ""
+
+#: library/functions/functions.php:1826
+#@ OnePager
+msgid "Tweet"
+msgstr ""
+
+#: library/functions/functions.php:1834
+#@ OnePager
+msgid "Pin It"
+msgstr ""
+
+#: library/functions/hooks.php:65
+#@ OnePager
+msgid "Leave a response"
+msgstr ""
+
+#: library/functions/hooks.php:65
+#, php-format
+#@ OnePager
+msgid "%1$s Response"
+msgstr ""
+
+#: library/functions/hooks.php:65
+#, php-format
+#@ OnePager
+msgid "%1$s Responses"
+msgstr ""
+
+#: library/functions/hooks.php:72
+#: library/functions/hooks.php:74
+#: library/functions/hooks.php:76
+#, php-format
+#@ supreme-core
+msgid "Comment on %1$s"
+msgstr ""
+
+#: library/functions/hooks.php:112
+#@ supreme-core
+msgid "(Untitled)"
+msgstr ""
+
+#: library/functions/hooks.php:132
+#: library/functions/shortcodes.php:240
+#@ OnePager
+#@ supreme-core
+msgid "Permalink"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:77
+#@ OnePager
+msgid "min"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:78
+#@ OnePager
+msgid "mins"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:79
+#: library/functions/loadpopularpost.php:80
+#@ OnePager
+msgid "hours"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:82
+#@ OnePager
+msgid "days"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:83
+#@ OnePager
+msgid "week"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:84
+#@ OnePager
+msgid "weeks"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:86
+#@ OnePager
+msgid "months"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:88
+#@ OnePager
+msgid "years"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:120
+#: library/functions/widgets.php:2103
+#@ OnePager
+#@ hybrid-core
+msgid "View"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:122
+#@ OnePager
+msgid "Views"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:128
+#@ OnePager
+msgid "Daily View"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:130
+#@ OnePager
+msgid "Daily Views"
+msgstr ""
+
+#: library/functions/loadpopularpost.php:164
+#@ OnePager
+msgid "No Popular post fond."
+msgstr ""
+
+#: library/functions/menus.php:38
+#@ supreme-core
+msgctxt "nav menu location"
+msgid "Primary"
+msgstr ""
+
+#: library/functions/menus.php:42
+#@ supreme-core
+msgctxt "nav menu location"
+msgid "Secondary"
+msgstr ""
+
+#: library/functions/menus.php:46
+#@ supreme-core
+msgctxt "nav menu location"
+msgid "Subsidiary"
+msgstr ""
+
+#: library/functions/menus.php:49
+#@ supreme-core
+msgctxt "nav menu location"
+msgid "Footer"
+msgstr ""
+
+#: library/functions/meta.php:74
+#@ OnePager
+msgid "Templatic News"
+msgstr ""
+
+#: library/functions/meta.php:145
+#@ OnePager
+msgid "More..."
+msgstr ""
+
+#: library/functions/meta.php:164
+#@ OnePager
+msgid "Extra profile information"
+msgstr ""
+
+#: library/functions/meta.php:169
+#: loop-meta.php:122
+#@ OnePager
+msgid "Twitter"
+msgstr ""
+
+#: library/functions/meta.php:173
+#@ OnePager
+msgid "Please enter your twitter link."
+msgstr ""
+
+#: library/functions/meta.php:178
+#: loop-meta.php:120
+#@ OnePager
+msgid "Facebook"
+msgstr ""
+
+#: library/functions/meta.php:182
+#@ OnePager
+msgid "Please enter your facebook profile/page link."
+msgstr ""
+
+#: library/functions/shortcodes.php:115
+#@ supreme-core
+msgid "State-of-the-art semantic personal publishing platform"
+msgstr ""
+
+#: library/functions/shortcodes.php:115
+#@ supreme-core
+msgid "WordPress"
+msgstr ""
+
+#: library/functions/shortcodes.php:128
+#, php-format
+#@ supreme-core
+msgid "%s WordPress Theme"
+msgstr ""
+
+#: library/functions/shortcodes.php:150
+#@ supreme-core
+msgid "Log out"
+msgstr ""
+
+#: library/functions/shortcodes.php:152
+#@ supreme-core
+msgid "Log in"
+msgstr ""
+
+#: library/functions/shortcodes.php:167
+#, php-format
+#@ supreme-core
+msgid "This page loaded in %1$s seconds with %2$s database queries."
+msgstr ""
+
+#: library/functions/shortcodes.php:188
+#, php-format
+#@ supreme-core
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: library/functions/shortcodes.php:240
+#, php-format
+#@ supreme-core
+msgid "Permalink to comment %1$s"
+msgstr ""
+
+#: library/functions/shortcodes.php:280
+#@ supreme-core
+msgid "Reply"
+msgstr ""
+
+#: library/functions/shortcodes.php:281
+#@ supreme-core
+msgid "Log in to reply."
+msgstr ""
+
+#: library/functions/sidebars.php:65
+#@ OnePager
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: library/functions/sidebars.php:67
+#@ OnePager
+msgid "This sidebar is specially for woocommerce product pages, whichever widgets you drop here will be shown in woocommerce product pages."
+msgstr ""
+
+#: library/functions/sidebars.php:91
+#@ OnePager
+msgctxt "sidebar"
+msgid "Header Right"
+msgstr ""
+
+#: library/functions/sidebars.php:92
+#@ OnePager
+msgid "Displays within the site's header area on right side."
+msgstr ""
+
+#: library/functions/sidebars.php:95
+#@ OnePager
+msgctxt "sidebar"
+msgid "Mega Menu Navigation"
+msgstr ""
+
+#: library/functions/sidebars.php:96
+#@ OnePager
+msgid "Load only jquery mega menu in Secondary Navigation menu."
+msgstr ""
+
+#: library/functions/sidebars.php:99
+#@ OnePager
+msgctxt "sidebar"
+msgid "Secondary Navigation Right"
+msgstr ""
+
+#: library/functions/sidebars.php:100
+#@ OnePager
+msgid "Widgets loaded here are visible to the right side of the Secondary Navigation"
+msgstr ""
+
+#: library/functions/sidebars.php:103
+#@ OnePager
+msgctxt "sidebar"
+msgid "Home Page Slider"
+msgstr ""
+
+#: library/functions/sidebars.php:104
+#@ OnePager
+msgid "Widgets placed here appears on the Home Page created with the help of Front Page template"
+msgstr ""
+
+#: library/functions/sidebars.php:108
+#@ OnePager
+msgctxt "sidebar"
+msgid "Home Page Content"
+msgstr ""
+
+#: library/functions/sidebars.php:109
+#@ OnePager
+msgid "Widget placed here are visible on Home Page created with the help of Front Page Template."
+msgstr ""
+
+#: library/functions/sidebars.php:112
+#@ OnePager
+msgctxt "sidebar"
+msgid "Front Page Sidebar"
+msgstr ""
+
+#: library/functions/sidebars.php:113
+#@ OnePager
+msgid "A home page sidebar widget area. use to display different widgets on home page."
+msgstr ""
+
+#: library/functions/sidebars.php:118
+#@ OnePager
+msgctxt "sidebar"
+msgid "Post Listing Page Sidebar"
+msgstr ""
+
+#: library/functions/sidebars.php:119
+#@ OnePager
+msgid "Widget placed here will be visible on your blog/post listing page as sidebar items."
+msgstr ""
+
+#: library/functions/sidebars.php:123
+#@ OnePager
+msgctxt "sidebar"
+msgid "Post Detail Page Sidebar"
+msgstr ""
+
+#: library/functions/sidebars.php:124
+#@ OnePager
+msgid "Widget placed here will be visible on your blog/post detail page as a sidebar items."
+msgstr ""
+
+#: library/functions/sidebars.php:128
+#@ OnePager
+msgctxt "sidebar"
+msgid "At Page End - All Pages"
+msgstr ""
+
+#: library/functions/sidebars.php:129
+#@ OnePager
+msgid "Widgets placed here appears at the end of the page before the footer."
+msgstr ""
+
+#: library/functions/sidebars.php:132
+#@ OnePager
+msgctxt "sidebar"
+msgid "Before Content"
+msgstr ""
+
+#: library/functions/sidebars.php:133
+#@ OnePager
+msgid "Widgets placed here appears before the all page's main content area."
+msgstr ""
+
+#: library/functions/sidebars.php:136
+#@ OnePager
+msgctxt "sidebar"
+msgid "Below Detail Page Content"
+msgstr ""
+
+#: library/functions/sidebars.php:137
+#@ OnePager
+msgid "Loads on detail page of post, pages, attachement. Visible before the comments area."
+msgstr ""
+
+#: library/functions/sidebars.php:140
+#@ OnePager
+msgctxt "sidebar"
+msgid "Primary Sidebar"
+msgstr ""
+
+#: library/functions/sidebars.php:141
+#@ OnePager
+msgid "This is the default sidebar area.If you do not place any widget for other relevant page sidebar areas than widgets placed here will be applied as their sidebar items."
+msgstr ""
+
+#: library/functions/sidebars.php:149
+#@ OnePager
+msgctxt "sidebar"
+msgid "Before Listing Entry"
+msgstr ""
+
+#: library/functions/sidebars.php:150
+#@ OnePager
+msgid "widgets placed here will appear directly above each post,page listing."
+msgstr ""
+
+#: library/functions/sidebars.php:154
+#@ OnePager
+msgctxt "sidebar"
+msgid "Subsidiary With 1 Column"
+msgstr ""
+
+#: library/functions/sidebars.php:155
+#@ OnePager
+msgid "Displays widgets in a single column below the \"After Content\" area on all post,pages,attachments."
+msgstr ""
+
+#: library/functions/sidebars.php:159
+#@ OnePager
+msgctxt "sidebar"
+msgid "Subsidiary With 2 Column"
+msgstr ""
+
+#: library/functions/sidebars.php:160
+#@ OnePager
+msgid "Displays widgets in two columns below the \"After Content\" area on all post,pages,attachments."
+msgstr ""
+
+#: library/functions/sidebars.php:164
+#@ OnePager
+msgctxt "sidebar"
+msgid "Subsidiary With 3 Column"
+msgstr ""
+
+#: library/functions/sidebars.php:165
+#@ OnePager
+msgid "Displays widgets in three columns below the \"After Content\" area on all post,pages,attachments."
+msgstr ""
+
+#: library/functions/sidebars.php:169
+#@ OnePager
+msgctxt "sidebar"
+msgid "After Header"
+msgstr ""
+
+#: library/functions/sidebars.php:170
+#@ OnePager
+msgid "A 1-column widget area loaded after the header of the site."
+msgstr ""
+
+#: library/functions/sidebars.php:173
+#@ OnePager
+msgctxt "sidebar"
+msgid "Contact Page Content Area"
+msgstr ""
+
+#: library/functions/sidebars.php:174
+#@ OnePager
+msgid "Google Map Widget is one of the suitable widget for this area."
+msgstr ""
+
+#: library/functions/sidebars.php:178
+#@ OnePager
+msgctxt "sidebar"
+msgid "Contact Page Sidebar"
+msgstr ""
+
+#: library/functions/sidebars.php:179
+#@ OnePager
+msgid "Widget placed here is visible on contact page as sidebar items."
+msgstr ""
+
+#: library/functions/sidebars.php:183
+#@ OnePager
+msgctxt "sidebar"
+msgid "Footer"
+msgstr ""
+
+#: library/functions/sidebars.php:184
+#@ OnePager
+msgid "Display the widgets in footer."
+msgstr ""
+
+#: library/functions/tlogin.php:4
+#@ default
+msgid "Supreme Update"
+msgstr ""
+
+#: library/functions/tlogin.php:87
+#@ OnePager
+msgid "Templatic Login , enter your templatic credentials to take the updates of supreme."
+msgstr ""
+
+#: library/functions/tlogin.php:91
+#: library/templatic_login.php:117
+#@ OnePager
+msgid "User Name"
+msgstr ""
+
+#: library/functions/tlogin.php:95
+#: library/templatic_login.php:121
+#@ OnePager
+msgid "Password"
+msgstr ""
+
+#: library/functions/tlogin.php:100
+#: library/templatic_login.php:126
+#@ OnePager
+msgid "Cancel"
+msgstr ""
+
+#: library/functions/widgets.php:222
+#@ OnePager
+msgid "Flickr Id:"
+msgstr ""
+
+#: library/functions/widgets.php:227
+#@ OnePager
+msgid "Number of photos:"
+msgstr ""
+
+#: library/functions/widgets.php:254
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your archives."
+msgstr ""
+
+#: library/functions/widgets.php:301
+#@ hybrid-core
+msgid "Select Year"
+msgstr ""
+
+#: library/functions/widgets.php:304
+#@ hybrid-core
+msgid "Select Month"
+msgstr ""
+
+#: library/functions/widgets.php:307
+#@ hybrid-core
+msgid "Select Week"
+msgstr ""
+
+#: library/functions/widgets.php:310
+#@ hybrid-core
+msgid "Select Day"
+msgstr ""
+
+#: library/functions/widgets.php:313
+#@ hybrid-core
+msgid "Select Post"
+msgstr ""
+
+#: library/functions/widgets.php:376
+#@ hybrid-core
+msgid "Alphabetical"
+msgstr ""
+
+#: library/functions/widgets.php:376
+#@ hybrid-core
+msgid "Daily"
+msgstr ""
+
+#: library/functions/widgets.php:376
+#@ hybrid-core
+msgid "Monthly"
+msgstr ""
+
+#: library/functions/widgets.php:376
+#@ hybrid-core
+msgid "Post By Post"
+msgstr ""
+
+#: library/functions/widgets.php:376
+#@ hybrid-core
+msgid "Weekly"
+msgstr ""
+
+#: library/functions/widgets.php:376
+#@ hybrid-core
+msgid "Yearly"
+msgstr ""
+
+#: library/functions/widgets.php:379
+#@ hybrid-core
+msgid "Custom"
+msgstr ""
+
+#: library/functions/widgets.php:379
+#@ hybrid-core
+msgid "HTML"
+msgstr ""
+
+#: library/functions/widgets.php:379
+#@ hybrid-core
+msgid "Option"
+msgstr ""
+
+#: library/functions/widgets.php:420
+#: library/functions/widgets.php:671
+#@ hybrid-core
+msgid "Show post count?"
+msgstr ""
+
+#: library/functions/widgets.php:435
+#@ templatic
+msgid "Arbitrary text or HTML"
+msgstr ""
+
+#: library/functions/widgets.php:436
+#@ templatic
+msgid "Text"
+msgstr ""
+
+#: library/functions/widgets.php:512
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your author lists."
+msgstr ""
+
+#: library/functions/widgets.php:524
+#: library/functions/widgets.php:599
+#@ hybrid-core
+msgid "Authors"
+msgstr ""
+
+#: library/functions/widgets.php:616
+#: library/functions/widgets.php:842
+#: library/functions/widgets.php:844
+#: library/functions/widgets.php:1239
+#: library/functions/widgets.php:1687
+#: library/functions/widgets.php:2105
+#@ hybrid-core
+msgid "Ascending"
+msgstr ""
+
+#: library/functions/widgets.php:616
+#: library/functions/widgets.php:842
+#: library/functions/widgets.php:844
+#: library/functions/widgets.php:1239
+#: library/functions/widgets.php:1687
+#: library/functions/widgets.php:2105
+#@ hybrid-core
+msgid "Descending"
+msgstr ""
+
+#: library/functions/widgets.php:617
+#@ hybrid-core
+msgid "Display Name"
+msgstr ""
+
+#: library/functions/widgets.php:617
+#: library/functions/widgets.php:843
+#: library/functions/widgets.php:845
+#: library/functions/widgets.php:1240
+#: library/functions/widgets.php:1688
+#: library/functions/widgets.php:4182
+#@ hybrid-core
+#@ OnePager
+msgid "ID"
+msgstr ""
+
+#: library/functions/widgets.php:617
+#@ hybrid-core
+msgid "Nice Name"
+msgstr ""
+
+#: library/functions/widgets.php:617
+#@ hybrid-core
+msgid "Post Count"
+msgstr ""
+
+#: library/functions/widgets.php:617
+#@ hybrid-core
+msgid "Registered"
+msgstr ""
+
+#: library/functions/widgets.php:617
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "URL"
+msgstr ""
+
+#: library/functions/widgets.php:617
+#@ hybrid-core
+msgid "Login"
+msgstr ""
+
+#: library/functions/widgets.php:649
+#: library/functions/widgets.php:1238
+#: library/functions/widgets.php:2104
+#@ hybrid-core
+msgid "List"
+msgstr ""
+
+#: library/functions/widgets.php:667
+#@ hybrid-core
+msgid "<acronym title=\"Hypertext Markup Language\">HTML</acronym>?"
+msgstr ""
+
+#: library/functions/widgets.php:675
+#@ hybrid-core
+msgid "Exclude admin?"
+msgstr ""
+
+#: library/functions/widgets.php:679
+#@ hybrid-core
+msgid "Show full name?"
+msgstr ""
+
+#: library/functions/widgets.php:683
+#: library/functions/widgets.php:1350
+#: library/functions/widgets.php:2224
+#@ hybrid-core
+msgid "Hide empty?"
+msgstr ""
+
+#: library/functions/widgets.php:705
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your bookmarks (links)."
+msgstr ""
+
+#: library/functions/widgets.php:717
+#: library/functions/widgets.php:753
+#: library/functions/widgets.php:812
+#@ hybrid-core
+msgid "Bookmarks"
+msgstr ""
+
+#: library/functions/widgets.php:843
+#: library/functions/widgets.php:1240
+#: library/functions/widgets.php:2106
+#@ hybrid-core
+msgid "Count"
+msgstr ""
+
+#: library/functions/widgets.php:843
+#: library/functions/widgets.php:1240
+#: library/functions/widgets.php:1688
+#@ hybrid-core
+msgid "Slug"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#: library/functions/widgets.php:2465
+#@ hybrid-core
+#@ OnePager
+msgid "Description"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "Length"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "Notes"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "Owner"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#: library/functions/widgets.php:2105
+#: library/functions/widgets.php:4184
+#@ hybrid-core
+#@ OnePager
+msgid "Random"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "Rating"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "Rel"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#: library/functions/widgets.php:1241
+#@ hybrid-core
+msgid "RSS"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "Target"
+msgstr ""
+
+#: library/functions/widgets.php:845
+#@ hybrid-core
+msgid "Updated"
+msgstr ""
+
+#: library/functions/widgets.php:953
+#@ hybrid-core
+msgid "Categorize?"
+msgstr ""
+
+#: library/functions/widgets.php:957
+#@ hybrid-core
+msgid "Show description?"
+msgstr ""
+
+#: library/functions/widgets.php:961
+#@ hybrid-core
+msgid "Hide invisible?"
+msgstr ""
+
+#: library/functions/widgets.php:965
+#@ hybrid-core
+msgid "Show rating?"
+msgstr ""
+
+#: library/functions/widgets.php:969
+#@ hybrid-core
+msgid "Show updated?"
+msgstr ""
+
+#: library/functions/widgets.php:973
+#@ hybrid-core
+msgid "Show images?"
+msgstr ""
+
+#: library/functions/widgets.php:977
+#@ hybrid-core
+msgid "Show name?"
+msgstr ""
+
+#: library/functions/widgets.php:981
+#@ hybrid-core
+msgid "Show private?"
+msgstr ""
+
+#: library/functions/widgets.php:1008
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your calendar."
+msgstr ""
+
+#: library/functions/widgets.php:1020
+#: library/functions/widgets.php:1075
+#@ hybrid-core
+msgid "Calendar"
+msgstr ""
+
+#: library/functions/widgets.php:1089
+#@ hybrid-core
+msgid "One-letter abbreviation?"
+msgstr ""
+
+#: library/functions/widgets.php:1089
+#@ OnePager
+msgid "initial"
+msgstr ""
+
+#: library/functions/widgets.php:1111
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your category links."
+msgstr ""
+
+#: library/functions/widgets.php:1240
+#@ hybrid-core
+msgid "Term Group"
+msgstr ""
+
+#: library/functions/widgets.php:1241
+#@ hybrid-core
+msgid "Atom"
+msgstr ""
+
+#: library/functions/widgets.php:1241
+#@ hybrid-core
+msgid "RDF"
+msgstr ""
+
+#: library/functions/widgets.php:1241
+#@ hybrid-core
+msgid "RSS 2.0"
+msgstr ""
+
+#: library/functions/widgets.php:1338
+#: library/functions/widgets.php:1795
+#@ hybrid-core
+msgid "Hierarchical?"
+msgstr ""
+
+#: library/functions/widgets.php:1342
+#@ hybrid-core
+msgid "Use description?"
+msgstr ""
+
+#: library/functions/widgets.php:1346
+#@ hybrid-core
+msgid "Show count?"
+msgstr ""
+
+#: library/functions/widgets.php:1379
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your menus."
+msgstr ""
+
+#: library/functions/widgets.php:1391
+#@ hybrid-core
+msgid "Navigation Menu"
+msgstr ""
+
+#: library/functions/widgets.php:1456
+#@ hybrid-core
+msgid "Navigation"
+msgstr ""
+
+#: library/functions/widgets.php:1571
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your page links."
+msgstr ""
+
+#: library/functions/widgets.php:1688
+#: page-templates/advance-search.php:128
+#@ hybrid-core
+#@ OnePager
+msgid "Author"
+msgstr ""
+
+#: library/functions/widgets.php:1688
+#@ hybrid-core
+msgid "Menu Order"
+msgstr ""
+
+#: library/functions/widgets.php:1688
+#: library/functions/widgets.php:1689
+#@ hybrid-core
+msgid "Modified"
+msgstr ""
+
+#: library/functions/widgets.php:1689
+#@ hybrid-core
+msgid "Created"
+msgstr ""
+
+#: library/functions/widgets.php:1820
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your search form."
+msgstr ""
+
+#: library/functions/widgets.php:1832
+#: library/functions/widgets.php:1918
+#: page-templates/advance-search.php:58
+#: page-templates/advance-search.php:59
+#: page-templates/advance-search.php:143
+#: searchform.php:15
+#@ hybrid-core
+#@ OnePager
+msgid "Search"
+msgstr ""
+
+#: library/functions/widgets.php:1934
+#@ hybrid-core
+msgid "Search Label:"
+msgstr ""
+
+#: library/functions/widgets.php:1938
+#@ hybrid-core
+msgid "Search Text:"
+msgstr ""
+
+#: library/functions/widgets.php:1945
+#@ hybrid-core
+msgid "Search Submit:"
+msgstr ""
+
+#: library/functions/widgets.php:1950
+#@ hybrid-core
+msgid "Use theme's <code>searchform.php</code>?"
+msgstr ""
+
+#: library/functions/widgets.php:1974
+#@ hybrid-core
+msgid "An advanced widget that gives you total control over the output of your tags."
+msgstr ""
+
+#: library/functions/widgets.php:2104
+#@ hybrid-core
+msgid "Flat"
+msgstr ""
+
+#: library/functions/widgets.php:2220
+#@ hybrid-core
+msgid "Pad counts?"
+msgstr ""
+
+#: library/functions/widgets.php:2245
+#@ OnePager
+msgid "Display a map of a specific location. Use in: Footer area, Homepage Content area, Primary, Subsidiary 1 Column, Subsidiary 2 Column, Contact Page Widget area"
+msgstr ""
+
+#: library/functions/widgets.php:2257
+#@ OnePager
+msgid "T &rarr; Google Map Widget"
+msgstr ""
+
+#: library/functions/widgets.php:2350
+#@ OnePager
+msgid "Address <small>(eg: 230 Vine Street And locations throughout Old City, Philadelphia, PA 19106)</small>"
+msgstr ""
+
+#: library/functions/widgets.php:2353
+#@ OnePager
+msgid "Map Height in pixcels <small>(eg: 300)</small>"
+msgstr ""
+
+#: library/functions/widgets.php:2357
+#@ OnePager
+msgid "Map Zooming Factor"
+msgstr ""
+
+#: library/functions/widgets.php:2370
+#@ OnePager
+msgid "Select Map Type"
+msgstr ""
+
+#: library/functions/widgets.php:2372
+#@ OnePager
+msgid "Road Map"
+msgstr ""
+
+#: library/functions/widgets.php:2373
+#@ OnePager
+msgid "Satellite Map"
+msgstr ""
+
+#: library/functions/widgets.php:2389
+#@ OnePager
+msgid "Provide a link to your account on various social media sites. Use in: After Header, Primary, Subsidiary area."
+msgstr ""
+
+#: library/functions/widgets.php:2473
+#@ OnePager
+msgid "Social Link"
+msgstr ""
+
+#: library/functions/widgets.php:2479
+#@ OnePager
+msgid "Social Icon"
+msgstr ""
+
+#: library/functions/widgets.php:2485
+#@ OnePager
+msgid "Social Text"
+msgstr ""
+
+#: library/functions/widgets.php:2567
+#@ OnePager
+msgid "Shows a subscribe box with which users can subscribe your newsletter. Use in: After Header, Homepage Content Area, Footer area, Subsidiary area."
+msgstr ""
+
+#: library/functions/widgets.php:2568
+#@ OnePager
+msgid "T &rarr; Newsletter Subscribe"
+msgstr ""
+
+#: library/functions/widgets.php:2616
+#@ OnePager
+msgid "Your Name"
+msgstr ""
+
+#: library/functions/widgets.php:2618
+#: library/functions/widgets.php:2631
+#: library/functions/widgets.php:2639
+#: library/functions/widgets.php:2664
+#@ OnePager
+msgid "Your Email Address"
+msgstr ""
+
+#: library/functions/widgets.php:2626
+#: library/functions/widgets.php:2633
+#: library/functions/widgets.php:2643
+#@ OnePager
+msgid "Subscribe"
+msgstr ""
+
+#: library/functions/widgets.php:2709
+#@ OnePager
+msgid "Text Under Title:"
+msgstr ""
+
+#: library/functions/widgets.php:2714
+#@ supreme
+msgid "Newsletter Provider"
+msgstr ""
+
+#: library/functions/widgets.php:2716
+#@ supreme
+msgid "Please select"
+msgstr ""
+
+#: library/functions/widgets.php:2717
+#@ supreme
+msgid "Feedburner"
+msgstr ""
+
+#: library/functions/widgets.php:2718
+#@ supreme
+msgid "MailChimp"
+msgstr ""
+
+#: library/functions/widgets.php:2719
+#@ supreme
+msgid "FeedBlitz"
+msgstr ""
+
+#: library/functions/widgets.php:2720
+#@ supreme
+msgid "Aweber"
+msgstr ""
+
+#: library/functions/widgets.php:2725
+#@ OnePager
+msgid "ID:"
+msgstr ""
+
+#: library/functions/widgets.php:2730
+#@ OnePager
+msgid "Mailchimp API Key:"
+msgstr ""
+
+#: library/functions/widgets.php:2733
+#@ OnePager
+msgid "List Id:"
+msgstr ""
+
+#: library/functions/widgets.php:2738
+#@ OnePager
+msgid "List ID:"
+msgstr ""
+
+#: library/functions/widgets.php:2743
+#@ OnePager
+msgid "List Name:"
+msgstr ""
+
+#: library/functions/widgets.php:2812
+#@ OnePager
+msgid "Set Time Out"
+msgstr ""
+
+#: library/functions/widgets.php:2813
+#@ OnePager
+msgid "Set the speed"
+msgstr ""
+
+#: library/functions/widgets.php:2814
+#@ OnePager
+msgid "Quote text"
+msgstr ""
+
+#: library/functions/widgets.php:2815
+#: page-templates/advance-search.php:127
+#@ OnePager
+msgid "Author name"
+msgstr ""
+
+#: library/functions/widgets.php:2822
+#@ OnePager
+msgid "T &rarr; Testimonials"
+msgstr ""
+
+#: library/functions/widgets.php:2905
+#@ supreme
+msgid "Transition type"
+msgstr ""
+
+#: library/functions/widgets.php:2907
+#: library/functions/widgets.php:3391
+#@ supreme
+#@ templatic
+msgid "Fade"
+msgstr ""
+
+#: library/functions/widgets.php:2908
+#@ supreme
+msgid "Scroll Up"
+msgstr ""
+
+#: library/functions/widgets.php:2909
+#@ supreme
+msgid "Scroll Right"
+msgstr ""
+
+#: library/functions/widgets.php:2910
+#@ supreme
+msgid "Shuffle"
+msgstr ""
+
+#: library/functions/widgets.php:2915
+#@ OnePager
+msgid "Quote text: "
+msgstr ""
+
+#: library/functions/widgets.php:2921
+#@ OnePager
+msgid "Author name: "
+msgstr ""
+
+#: library/functions/widgets.php:2963
+#@ OnePager
+msgid "Link Text"
+msgstr ""
+
+#: library/functions/widgets.php:2968
+#@ OnePager
+msgid "Link Url"
+msgstr ""
+
+#: library/functions/widgets.php:3023
+#@ OnePager
+msgid "One textbox is required."
+msgstr ""
+
+#: library/functions/widgets.php:3041
+#@ default
+msgid "Home page post slider with display selected post type or display custom images on home page slider"
+msgstr ""
+
+#: library/functions/widgets.php:3042
+#@ default
+msgid "T &rarr; Home Page Main Slider"
+msgstr ""
+
+#: library/functions/widgets.php:3370
+#@ OnePager
+msgid "Slider Title"
+msgstr ""
+
+#: library/functions/widgets.php:3378
+#@ OnePager
+msgid "Slider Description"
+msgstr ""
+
+#: library/functions/widgets.php:3387
+#@ OnePager
+msgid "Animation"
+msgstr ""
+
+#: library/functions/widgets.php:3394
+#@ templatic
+msgid "Slide"
+msgstr ""
+
+#: library/functions/widgets.php:3401
+#@ OnePager
+msgid "Slide show"
+msgstr ""
+
+#: library/functions/widgets.php:3415
+#@ OnePager
+msgid "Sliding Direction"
+msgstr ""
+
+#: library/functions/widgets.php:3419
+#@ templatic
+msgid "Horizontal"
+msgstr ""
+
+#: library/functions/widgets.php:3422
+#@ templatic
+msgid "Vertical"
+msgstr ""
+
+#: library/functions/widgets.php:3429
+#@ OnePager
+msgid "Reverse Animation Direction"
+msgstr ""
+
+#: library/functions/widgets.php:3433
+#@ templatic
+msgid "False"
+msgstr ""
+
+#: library/functions/widgets.php:3436
+#@ templatic
+msgid "True"
+msgstr ""
+
+#: library/functions/widgets.php:3443
+#@ OnePager
+msgid "Slide Show Speed"
+msgstr ""
+
+#: library/functions/widgets.php:3450
+#@ OnePager
+msgid "Animation Speed"
+msgstr ""
+
+#: library/functions/widgets.php:3460
+#@ templatic
+msgid "<b>Settings for Carousel slider option?</b>"
+msgstr ""
+
+#: library/functions/widgets.php:3467
+#@ OnePager
+msgid "Item Width: <br/><small>(Box-model width of individual items, including horizontal borders and padding.)</small>"
+msgstr ""
+
+#: library/functions/widgets.php:3474
+#@ OnePager
+msgid "Min Item <br/><small>(Minimum number of items that should be visible. Items will resize fluidly when below this.)</small>"
+msgstr ""
+
+#: library/functions/widgets.php:3480
+#@ OnePager
+msgid "Max Item <br/><small>(Maxmimum number of items that should be visible. Items will resize fluidly when above this limit.)</small>"
+msgstr ""
+
+#: library/functions/widgets.php:3486
+#@ OnePager
+msgid "Items Move <br/><small>(Number of items that should move on animation. If 0, slider will move all visible items.)</small>"
+msgstr ""
+
+#: library/functions/widgets.php:3493
+#@ OnePager
+msgid "Posts Per Slide <br/><small>(Number of items you want to show in one slide. this option is work with LI tag, it will show all images in one LI tag. </small>"
+msgstr ""
+
+#: library/functions/widgets.php:3505
+#@ OnePager
+msgid "Select Taxonomy"
+msgstr ""
+
+#: library/functions/widgets.php:3548
+#@ OnePager
+msgid "Excerpt Length:"
+msgstr ""
+
+#: library/functions/widgets.php:3555
+#@ OnePager
+msgid "Enable The Post Excerpt In Slider"
+msgstr ""
+
+#: library/functions/widgets.php:3563
+#@ OnePager
+msgid "<b>Use custom images?</b>"
+msgstr ""
+
+#: library/functions/widgets.php:3577
+#@ default
+msgid "Banner Slider Title 1"
+msgstr ""
+
+#: library/functions/widgets.php:3589
+#@ default
+msgid "Banner Slider Title Link 1"
+msgstr ""
+
+#: library/functions/widgets.php:3598
+#@ default
+msgid "Banner Slider Image 1 full URL <small>(ex.http://templatic.com/images/banner1.png )</small>  :"
+msgstr ""
+
+#: library/functions/widgets.php:3682
+#@ OnePager
+msgid "A simple contact form where site visitors can send you a message with their name and email address."
+msgstr ""
+
+#: library/functions/widgets.php:3683
+#@ OnePager
+msgid "T &rarr; Contact us"
+msgstr ""
+
+#: library/functions/widgets.php:3706
+#@ OnePager
+msgid "Dear"
+msgstr ""
+
+#: library/functions/widgets.php:3709
+#: library/functions/widgets.php:3910
+#: page-templates/contact-us.php:175
+#@ OnePager
+msgid "Message"
+msgstr ""
+
+#: library/functions/widgets.php:3746
+#@ OnePager
+msgid "Thank you, your information is sent successfully."
+msgstr ""
+
+#: library/functions/widgets.php:3751
+#@ OnePager
+msgid "Please fill out all the fields before submitting."
+msgstr ""
+
+#: library/functions/widgets.php:3802
+#@ OnePager
+msgid "Please Enter Name"
+msgstr ""
+
+#: library/functions/widgets.php:3837
+#@ OnePager
+msgid "Please Enter valid Email"
+msgstr ""
+
+#: library/functions/widgets.php:3856
+#@ OnePager
+msgid "Please Enter Subject"
+msgstr ""
+
+#: library/functions/widgets.php:3873
+#@ OnePager
+msgid "Please Enter Message"
+msgstr ""
+
+#: library/functions/widgets.php:3892
+#@ OnePager
+msgid "Name*"
+msgstr ""
+
+#: library/functions/widgets.php:3902
+#: page-templates/contact-us.php:166
+#@ OnePager
+msgid "Subject"
+msgstr ""
+
+#: library/functions/widgets.php:3915
+#: page-templates/contact-us.php:201
+#@ OnePager
+msgid "Send"
+msgstr ""
+
+#: library/functions/widgets.php:3937
+#@ OnePager
+msgid "Widget Title"
+msgstr ""
+
+#: library/functions/widgets.php:3949
+#@ OnePager
+msgid "Show Listing post with post thumbnail, post title, post content, post categorywise, gravatar with order by option."
+msgstr ""
+
+#: library/functions/widgets.php:3950
+#@ OnePager
+msgid "T &rarr; Post Listing "
+msgstr ""
+
+#: library/functions/widgets.php:3971
+#: library/functions/widgets.php:4110
+#@ OnePager
+msgid "By"
+msgstr ""
+
+#: library/functions/widgets.php:3975
+#: library/functions/widgets.php:4114
+#@ OnePager
+msgid "[Read More...]"
+msgstr ""
+
+#: library/functions/widgets.php:4142
+#@ OnePager
+msgid "Select Category:"
+msgstr ""
+
+#: library/functions/widgets.php:4144
+#@ OnePager
+msgid "---Select Category wise recent post ---"
+msgstr ""
+
+#: library/functions/widgets.php:4177
+#@ OnePager
+msgid "Order By"
+msgstr ""
+
+#: library/functions/widgets.php:4181
+#@ OnePager
+msgid "Parent"
+msgstr ""
+
+#: library/functions/widgets.php:4183
+#@ OnePager
+msgid "Comment Count"
+msgstr ""
+
+#: library/functions/widgets.php:4188
+#@ OnePager
+msgid "Sort Order"
+msgstr ""
+
+#: library/functions/widgets.php:4190
+#@ OnePager
+msgid "Descending (3, 2, 1)"
+msgstr ""
+
+#: library/functions/widgets.php:4191
+#@ OnePager
+msgid "Ascending (1, 2, 3)"
+msgstr ""
+
+#: library/functions/widgets.php:4195
+#@ OnePager
+msgid "Show Author Gravatar"
+msgstr ""
+
+#: library/functions/widgets.php:4198
+#@ OnePager
+msgid "Gravatar Size"
+msgstr ""
+
+#: library/functions/widgets.php:4200
+#@ OnePager
+msgid "Small (45px)"
+msgstr ""
+
+#: library/functions/widgets.php:4201
+#@ OnePager
+msgid "Medium (65px)"
+msgstr ""
+
+#: library/functions/widgets.php:4202
+#@ OnePager
+msgid "Large (85px)"
+msgstr ""
+
+#: library/functions/widgets.php:4203
+#@ OnePager
+msgid "Extra Large (125px)"
+msgstr ""
+
+#: library/functions/widgets.php:4210
+#@ OnePager
+msgid "Image Size"
+msgstr ""
+
+#: library/functions/widgets.php:4213
+#@ OnePager
+msgid "thumb"
+msgstr ""
+
+#: library/functions/widgets.php:4223
+#@ OnePager
+msgid "Show Post Title"
+msgstr ""
+
+#: library/functions/widgets.php:4226
+#@ OnePager
+msgid "Content Type"
+msgstr ""
+
+#: library/functions/widgets.php:4228
+#@ OnePager
+msgid "Show Content"
+msgstr ""
+
+#: library/functions/widgets.php:4229
+#@ OnePager
+msgid "Show Excerpt"
+msgstr ""
+
+#: library/functions/widgets.php:4230
+#@ OnePager
+msgid "Show Content Limit"
+msgstr ""
+
+#: library/functions/widgets.php:4231
+#@ OnePager
+msgid "No Content"
+msgstr ""
+
+#: library/functions/widgets.php:4235
+#@ OnePager
+msgid "Limit content to"
+msgstr ""
+
+#: library/functions/widgets.php:4235
+#@ OnePager
+msgid "characters"
+msgstr ""
+
+#: library/functions/widgets.php:4238
+#@ OnePager
+msgid "More Text (if applicable)"
+msgstr ""
+
+#: library/functions/widgets.php:4253
+#@ OnePager
+msgid "Widget list the popular post as per total views , daily views or comments.( you can also select another post-type)"
+msgstr ""
+
+#: library/functions/widgets.php:4254
+#@ OnePager
+msgid "T &rarr; Popular Posts Widget"
+msgstr ""
+
+#: library/functions/widgets.php:4382
+#@ OnePager
+msgid "Total Number of Posts"
+msgstr ""
+
+#: library/functions/widgets.php:4388
+#@ OnePager
+msgid "Show excerpt"
+msgstr ""
+
+#: library/functions/widgets.php:4394
+#@ OnePager
+msgid "Number of Posts Per Slide"
+msgstr ""
+
+#: library/functions/widgets.php:4399
+#@ OnePager
+msgid "Shows post as per view counting/comments"
+msgstr ""
+
+#: library/functions/widgets.php:4401
+#@ OnePager
+msgid "Total views"
+msgstr ""
+
+#: library/functions/widgets.php:4402
+#@ OnePager
+msgid "Daily views"
+msgstr ""
+
+#: library/functions/widgets.php:4403
+#@ OnePager
+msgid "Total comments"
+msgstr ""
+
+#: library/functions/widgets.php:4409
+#@ OnePager
+msgid "Pagination Position"
+msgstr ""
+
+#: library/functions/widgets.php:4411
+#@ OnePager
+msgid "After Posts"
+msgstr ""
+
+#: library/functions/widgets.php:4412
+#@ OnePager
+msgid "Before Posts"
+msgstr ""
+
+#: library/functions/widgets.php:4426
+#@ OnePager
+msgid "Number of Reviews"
+msgstr ""
+
+#: library/functions/widgets.php:4466
+#@ OnePager
+msgid "Select Post:"
+msgstr ""
+
+#: library/functions/widgets.php:4576
+#@ OnePager
+msgid "Display Cart Informations with automatic cart update. Best to use it in \"Header right\" sidebar"
+msgstr ""
+
+#: library/functions/widgets.php:4578
+#@ OnePager
+msgid "T &rarr; WooCommerce Shopping Cart"
+msgstr ""
+
+#: library/functions/widgets.php:4581
+#@ OnePager
+msgid "Display Cart Informations with automatic cart update. Best to use it in \"Header right area\" widget are"
+msgstr ""
+
+#: library/functions/widgets.php:4600
+#: library/functions/widgets.php:4628
+#@ woocommerce
+#@ templatic
+msgid "Subtotal"
+msgstr ""
+
+#: library/functions/widgets.php:4602
+#@ woocommerce
+msgid "View Cart &rarr;"
+msgstr ""
+
+#: library/functions/widgets.php:4603
+#: library/functions/widgets.php:4630
+#@ woocommerce
+#@ templatic
+msgid "Checkout &rarr;"
+msgstr ""
+
+#: library/templatic_login.php:89
+#@ OnePager
+msgid "The new version of  is available."
+msgstr ""
+
+#: library/templatic_login.php:91
+#@ OnePager
+msgid "you can update to the latest version automatically , or download the latest version of the theme."
+msgstr ""
+
+#: library/templatic_login.php:92
+#@ OnePager
+msgid "Warning"
+msgstr ""
+
+#: library/templatic_login.php:92
+#@ OnePager
+msgid "Remember that the updates will replace all your changes so please keep backup of your changes."
+msgstr ""
+
+#: library/templatic_login.php:93
+#@ templatic
+msgid "Download latest Version"
+msgstr ""
+
+#: library/templatic_login.php:112
+#, php-format
+#@ OnePager
+msgid "Enter your templatic login credentials to update your %s theme to the latest version."
+msgstr ""
+
+#: library/templatic_login.php:142
+#@ OnePager
+msgid "You have the latest version of the "
+msgstr ""
+
+#: loop-error.php:16
+#@ OnePager
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: loop-meta.php:118
+#@ OnePager
+msgid "Link"
+msgstr ""
+
+#: loop-meta.php:139
+#@ OnePager
+msgid "You have subscribed to "
+msgstr ""
+
+#: loop-meta.php:140
+#@ OnePager
+msgid " which allows you to submit "
+msgstr ""
+
+#: loop-meta.php:143
+#@ OnePager
+msgid "events till now, go and submit remaining"
+msgstr ""
+
+#: loop-meta.php:145
+#@ OnePager
+msgid "events"
+msgstr ""
+
+#: loop-meta.php:177
+#, php-format
+#@ OnePager
+msgid "You are browsing the search results for \"%s\""
+msgstr ""
+
+#: loop-meta.php:186
+#@ OnePager
+msgid "Archives by date"
+msgstr ""
+
+#: loop-meta.php:190
+#@ OnePager
+msgid "You are browsing the site archives by date."
+msgstr ""
+
+#: loop-meta.php:218
+#@ OnePager
+msgid "You are browsing the site archives."
+msgstr ""
+
+#: page-templates/advance-search.php:104
+#@ OnePager
+msgid "Select Category"
+msgstr ""
+
+#: page-templates/advance-search.php:123
+#@ OnePager
+msgid "Start Date"
+msgstr ""
+
+#: page-templates/advance-search.php:124
+#@ OnePager
+msgid "End Date"
+msgstr ""
+
+#: page-templates/advance-search.php:130
+#@ OnePager
+msgid "Exact author"
+msgstr ""
+
+#: page-templates/advance-search.php:163
+#@ OnePager
+msgid "Please enter word you want to search"
+msgstr ""
+
+#: page-templates/archives.php:69
+#@ OnePager
+msgid "&nbsp;by&nbsp;"
+msgstr ""
+
+#: page-templates/archives.php:71
+#@ OnePager
+msgid "&nbsp;on&nbsp;"
+msgstr ""
+
+#: page-templates/archives.php:73
+#@ OnePager
+msgid "&nbsp;No Comments&nbsp;"
+msgstr ""
+
+#: page-templates/archives.php:73
+#@ OnePager
+msgid "&nbsp;1 Comment&nbsp;"
+msgstr ""
+
+#: page-templates/archives.php:73
+#@ OnePager
+msgid "&nbsp;Comments Closed&nbsp;"
+msgstr ""
+
+#: page-templates/contact-us.php:130
+#@ OnePager
+msgid "Contact mail successfully sent."
+msgstr ""
+
+#: page-templates/contact-us.php:148
+#@ OnePager
+msgid "Inquiry Form"
+msgstr ""
+
+#: page-templates/contact-us.php:191
+#@ OnePager
+msgid "Verify words"
+msgstr ""
+
+#: page-templates/contact-us.php:272
+#@ OnePager
+msgid "Please enter your name"
+msgstr ""
+
+#: page-templates/contact-us.php:307
+#@ OnePager
+msgid "Please enter valid email address"
+msgstr ""
+
+#: page-templates/contact-us.php:326
+#@ OnePager
+msgid "Please enter a subject"
+msgstr ""
+
+#: page-templates/contact-us.php:343
+#@ OnePager
+msgid "Please enter message"
+msgstr ""
+
+#: page-templates/contact-us.php:360
+#@ OnePager
+msgid "Please enter captcha"
+msgstr ""
+
+#: page-templates/sitemap.php:54
+#@ OnePager
+msgid "Posts"
+msgstr ""
+
+#: page-templates/sitemap.php:62
+#: page-templates/sitemap.php:118
+#@ OnePager
+msgid "0 comment"
+msgstr ""
+
+#: page-templates/sitemap.php:62
+#: page-templates/sitemap.php:118
+#@ OnePager
+msgid "1 comment"
+msgstr ""
+
+#: page-templates/sitemap.php:62
+#: page-templates/sitemap.php:118
+#@ OnePager
+msgid "% comments"
+msgstr ""
+
+#: page-templates/sitemap.php:78
+#@ OnePager
+msgid "Post Categories"
+msgstr ""
+
+#: searchform.php:14
+#@ OnePager
+msgid "Search this site..."
+msgstr ""
+
+#: wp_theme_update.php:54
+#: wp_theme_update.php:108
+#@ OnePager
+msgid "There is a new version of 5Star available."
+msgstr ""
+
+#: wp_theme_update.php:59
+#: wp_theme_update.php:113
+#@ OnePager
+msgid "or <a href=\"\" title=\"5Star Update\">update now</a>."
+msgstr ""
+
