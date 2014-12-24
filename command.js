@@ -692,22 +692,47 @@ var server = net.createServer(function(c) {
              var p2_batt_p = p2_batt/1024*5.6/3.7*100 
              var p2_batt_p1 = p2_batt_p.toString()
              var p2_batt_pe = p2_batt_p1.slice(0,4);
+             var batt = parseInt(p2_batt_pe)
+             if (batt < 20){
+                 c.write("*HQ,000,S41,130305,6,4,1,1,1,1,1,1,1#")    
+             }
              var account = cache[datum.uniqueID].accountID;
              var device = cache[datum.uniqueID ].deviceID;
-                     
-                 var onResponse = function(err, coords) {
+
+             var lac = parseInt(parse2_lac)
+             var cell = parseInt(parse2_cell_id)
+             mysql.query('SELECT O_LNG,O_LAT FROM Loc WHERE LAC = "'+lac+'" AND CELL = "'+cell+'"', function(err, fields) {
+                var res = fields[0];
+                   if (fields.length > 0){
+                    var lat = res['O_LAT'];
+                    var lng = res['O_LNG'];
+                    console.log("Loc" + lat + "##" + lng) 
+                    var statusCode = 61481;
+                    var val_strings = [];                
+                    val_strings.push('("'+account+'","'+device+'","'+statusCode+'",'+lng+','+lat+',UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"))');
+                    sql1 = 'INSERT INTO EventData (accountID,deviceID,statusCode,longitude,latitude,timestamp) VALUES ' + val_strings.join(',');
+                     console.log("Local LOC")
+                         mysql.query(sql1);
+                         sql='UPDATE Device set lastBatteryLevel="'+p2_batt_pe+'",lastValidLatitude="'+lat+'",lastValidLongitude="'+lng+'",lastCellServingInfo="'+parse2_lac+'",lastEventTimestamp=UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"),notes="" WHERE accountID="'+account+'" and deviceID="'+device+'"'
+                         mysql.query(sql); 
+                   }
+                   else{
+                     var onResponse = function(err, coords) {
                       if (err == null) {
                          if (typeof coords.cell != 'undefined') {
                           } 
                         else {
                         var statusCode = 61481;
-                        var val_strings = [];
-                       //var fixgeo = transform.gcj2wgs(coords.lat,coords.lon);                       
-                        val_strings.push('("'+account+'","'+device+'","'+statusCode+'",'+coords.lon+','+coords.lat+',UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"))');  
+                        var val_strings = [];                
+                        var fixgeo = transform.wgs2gcj(coords.lat,coords.lon);
+                        var fixlat = fixgeo.lat;
+                        var fixlng = fixgeo.lng;
+                        console.log(fixlat,fixlng) 
+                        val_strings.push('("'+account+'","'+device+'","'+statusCode+'",'+fixlng+','+fixlat+',UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"))');
                          sql1 = 'INSERT INTO EventData (accountID,deviceID,statusCode,longitude,latitude,timestamp) VALUES ' + val_strings.join(',');
                          console.log(sql1)
                          mysql.query(sql1);
-                         sql='UPDATE Device set lastBatteryLevel="'+p2_batt_pe+'",lastValidLatitude="'+coords.lat+'",lastValidLongitude="'+coords.lon+'",lastCellServingInfo="'+parse2_lac+'",lastEventTimestamp=UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"),notes="" WHERE accountID="'+account+'" and deviceID="'+device+'"'
+                         sql='UPDATE Device set lastBatteryLevel="'+p2_batt_pe+'",lastValidLatitude="'+fixlat+'",lastValidLongitude="'+fixlng+'",lastCellServingInfo="'+parse2_lac+'",lastEventTimestamp=UNIX_TIMESTAMP("'+p2_date+' '+p2_time+'"),notes="" WHERE accountID="'+account+'" and deviceID="'+device+'"'
                          mysql.query(sql);                                     
                         }
                        }
@@ -715,8 +740,13 @@ var server = net.createServer(function(c) {
                       console.log()
                       if (parse2cmd == "V3"){
                        bscoords.requestGoogle(parse2_mcc,parse2_mnc,parse2_lac,parse2_cell_id, onResponse);
-                      }   
-                     
+                        console.log("GOOGLE LOC" + parse2_lac + parse2_cell_id)
+                      }     
+                   }
+               })
+                  /*
+ 
+                    */ 
                     // sent command  
                     mysql.query('SELECT commandArgs,creationTime FROM PendingCommands WHERE accountID = "'+account+'" AND deviceID = "'+device+'" AND sendState = 0  ORDER BY creationTime DESC LIMIT 1', function(err, fields) {
                     if (fields.length > 0){
@@ -902,6 +932,7 @@ var server = net.createServer(function(c) {
 server.listen(config.tcp_port, function() {
     console.log('SIPGEAR DCS Running');
 });
+
 
 
 
